@@ -27,34 +27,18 @@ public class HardwareServiceImpl implements HardwareService {
     }
 
     @Override
-    public Optional<HardwareDTO> findByCode(final String code) {
-        return hardwareRepository
-                .findByCode(code)
-                .map(this::mapHardwareToDTO);
+    public HardwareDTO findByCode(String code) {
+        return hardwareRepository.findByCode(code)
+                .map(this::mapHardwareToDTO)
+                .orElse(null);
     }
 
     @Override
-    public Optional<HardwareDTO> save(final HardwareCommand hardwareCommand) {
-        return hardwareRepository
-                .save(mapCommandToHardware(hardwareCommand))
-                .map(this::mapHardwareToDTO);
+    public Optional<HardwareDTO> save(HardwareCommand hardwareCommand) {
+        return Optional.empty();
     }
 
-    @Override
-    public void deleteByCode(final String code) {
-        hardwareRepository.deleteByCode(code);
-    }
-
-    public HardwareDTO mapHardwareToDTO(Hardware hardware) {
+    public HardwareDTO mapHardwareToDTO(Hardware hardware){
         return new HardwareDTO(hardware.getName(), hardware.getPrice());
-    }
-
-    public Hardware mapCommandToHardware(final HardwareCommand hardwareCommand) {
-        return new Hardware(
-                hardwareCommand.getName(),
-                hardwareCommand.getCode(),
-                hardwareCommand.getPrice(),
-                hardwareCommand.getHardwareType(),
-                hardwareCommand.getAmount());
     }
 }

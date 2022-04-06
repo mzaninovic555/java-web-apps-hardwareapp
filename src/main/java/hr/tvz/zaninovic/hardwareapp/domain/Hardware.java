@@ -1,48 +1,32 @@
 package hr.tvz.zaninovic.hardwareapp.domain;
 
+import lombok.*;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
 public class Hardware {
-    private String name, code;
+    private String name;
+
+    private String code;
+
     private double price;
+
     private HardwareType hardwareType;
+
     private int amount;
 
-    public Hardware(String name, String code, double price, HardwareType hardwareType, int amount) {
-        this.name = name;
-        this.code = code;
-        this.price = price;
-        this.hardwareType = hardwareType;
-        this.amount = amount;
-    }
+    @Override
+    public boolean equals(Object o){
+        if(this == o){
+            return true;
+        }
+        if(o == null || getClass() != o.getClass()){
+            return false;
+        }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
+        Hardware hardware = (Hardware) o;
+        return code.equals(hardware.code);
     }
 }

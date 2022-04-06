@@ -2,11 +2,12 @@ package hr.tvz.zaninovic.hardwareapp.controller;
 
 import hr.tvz.zaninovic.hardwareapp.domain.HardwareDTO;
 import hr.tvz.zaninovic.hardwareapp.service.HardwareService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import hr.tvz.zaninovic.hardwareapp.validation.HardwareCommand;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -23,8 +24,32 @@ public class HardwareController {
         return hardwareService.findAll();
     }
 
-    @GetMapping(params = "code")
-    public HardwareDTO getHardwareByCode(@RequestParam final String code){
-        return hardwareService.findByCode(code);
+    @GetMapping("/{code}")
+    public ResponseEntity<HardwareDTO> getHardwareByCode(@PathVariable final String code){
+        return hardwareService
+                .findByCode(code)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @PostMapping
+    public ResponseEntity<HardwareDTO> save(@Valid @RequestBody final HardwareCommand hardwareCommand) {
+        return hardwareService
+                .save(hardwareCommand)
+                .map(
+                        hDTO -> ResponseEntity
+                                .status(HttpStatus.CREATED)
+                                .body(hDTO))
+                .orElseGet(
+                        () -> ResponseEntity
+                                .status(HttpStatus.CONFLICT)
+                                .build()
+                );
+    }
+
+    @DeleteMapping("/{code}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void delete(@PathVariable String code){
+        hardwareService.deleteByCode(code);
     }
 }

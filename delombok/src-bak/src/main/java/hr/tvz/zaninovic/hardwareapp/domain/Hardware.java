@@ -4,11 +4,17 @@ import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
 @Setter
-@ToString
-public class HardwareDTO {
+@Getter
+@EqualsAndHashCode
+public class Hardware {
     private String name;
 
+    private String code;
+
     private double price;
+
+    private HardwareType hardwareType;
+
+    private int amount;
 }

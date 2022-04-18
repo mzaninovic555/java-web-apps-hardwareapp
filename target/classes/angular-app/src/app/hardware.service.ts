@@ -42,11 +42,14 @@ export class HardwareService {
   }
 
   deleteHardware(hardware: Hardware | string): Observable<Hardware> {
+    console.log(hardware)
     const code = typeof hardware === 'string' ? hardware : hardware.code;
     const url = `${this.hardwareURL}/${code}`;
 
-    return this.http.delete<Hardware>(url, this.httpOptions).pipe(
-      tap(_ => console.log(`deleted student JMBAG=${code}`)),
+    console.log(url)
+
+    return this.http.delete<Hardware>(url).pipe(
+      tap(_ => console.log(`Deleted hardware with code = ${code}`)),
       catchError(this.handleError<Hardware>('deleteStudent'))
     );
   }

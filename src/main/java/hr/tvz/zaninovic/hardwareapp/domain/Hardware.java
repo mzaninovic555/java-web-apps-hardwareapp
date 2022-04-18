@@ -10,10 +10,10 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Hardware {
-    private String code;
 
     private String name;
 
+    private String code;
 
     private double price;
 

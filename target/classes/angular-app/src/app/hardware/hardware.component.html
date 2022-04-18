@@ -1,6 +1,6 @@
 <div class="row col-md-4 ms-5">
   <h2 class="mb-4"> Popis hardware-a</h2>
-  <ul class="hardwares list-group mb-5">
+  <ul class="hardwares list-group mb-2">
     <div>
       <li *ngFor="let hardware of hardwares" (click)="onSelect(hardware)"
           class="list-group-item list-group-item-action list-group-item-dark">
@@ -14,8 +14,8 @@
           <span class="me-2">{{hardware.name}}</span>
           <span>${{hardware.price}}</span>
         </a>
-      <button type="button" class="btn float-end" (click)="delete(hardware)">
-        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" style="color: black;"
+      <button type="button" class="btn btn-outline-dark float-end" (click)="delete(hardware)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="color: black;"
              class="bi bi-trash float-end"
              viewBox="0 0 16 16">
           <path
@@ -28,27 +28,30 @@
     </div>
   </ul>
   <form>
-    <div>
+    <div class="mb-3">
       <label for="code">Code: </label>
       <input type="text" class="form-control" name="code" id="code" #code required>
     </div>
-    <div>
+    <div class="mb-3">
       <label for="name">Name: </label>
       <input type="text" class="form-control" name="name" id="name" #name required>
     </div>
-    <div>
+    <div class="mb-3">
       <label for="price">Price: </label>
       <input type="number" class="form-control" name="name" id="price" #price required>
     </div>
-    <div>
+    <div class="mb-3">
+      <select class="form-select" aria-label="Default select example" #hardwareType>
+        <option *ngFor="let type of hardwareTypes" [value]=type>{{type}} #hardwareType</option>
+      </select>
       <label for="hardwareType">Hardware Type: </label>
-      <input type="text" class="form-control" name="hardwareType" #hardwareType id="hardwareType" required>
+      <input type="text" class="form-control" name="hardwareType" #sardwareType id="hardwareType" required>
     </div>
-    <div>
+    <div class="mb-3">
       <label for="amount">Amount: </label>
       <input type="number" class="form-control" name="amount" id="amount" #amount required>
     </div>
-    <button class="btn btn-primary mt-2"
+    <button class="btn btn-outline-dark mt-2 mb-3"
             (click)="add(code.value, name.value, +price.value, hardwareType.value, +amount.value)">Add Hardware!
     </button>
   </form>

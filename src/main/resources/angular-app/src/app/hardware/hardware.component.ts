@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Hardware} from '../hardware';
 import {HardwareService} from '../hardware.service';
+import {HardwareType} from "../hardware-type";
 
 @Component({
   selector: 'app-hardware',
@@ -11,7 +12,7 @@ export class HardwareComponent implements OnInit {
 
   hardwares!: Hardware[];
   selectedHardware: Hardware | undefined;
-
+  public hardwareTypes = Object.values(HardwareType);
 
   constructor(private hardwareService: HardwareService) {
   }

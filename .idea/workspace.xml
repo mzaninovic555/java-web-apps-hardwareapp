@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Dodane metode, promijenjen stil">
+    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Popravljen delete">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware-type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware/hardware.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware/hardware.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware/hardware.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware/hardware.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/angular-app/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware/hardware.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware/hardware.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware/hardware.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware/hardware.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +95,7 @@
       <workItem from="1650282650832" duration="721000" />
       <workItem from="1650283392651" duration="3595000" />
       <workItem from="1650287033950" duration="6289000" />
-      <workItem from="1650307044904" duration="585000" />
+      <workItem from="1650307044904" duration="2420000" />
     </task>
     <task id="LOCAL-00001" summary="Format">
       <created>1650283537978</created>
@@ -113,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650293365478</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Popravljen delete">
+      <created>1650307666711</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650307666711</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +159,7 @@
     <MESSAGE value="Format" />
     <MESSAGE value="Angular spojen sa REST" />
     <MESSAGE value="Dodane metode, promijenjen stil" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodane metode, promijenjen stil" />
+    <MESSAGE value="Popravljen delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Popravljen delete" />
   </component>
 </project>

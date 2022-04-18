@@ -1,17 +1,51 @@
 import {Injectable} from '@angular/core';
-import {Observable, of} from 'rxjs';
+import {catchError, Observable, of, tap} from 'rxjs';
 import {Hardware} from './hardware';
-import {HARDWARES} from './hardware-mock';
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
 })
 export class HardwareService {
 
-  constructor() {
+  private hardwareURL = "http://localhost:8080/hardware";
+
+  httpOptions = {
+    headers: new HttpHeaders({'Content-Type': 'application/json'})
+  };
+
+  constructor(private http: HttpClient) {
   }
 
   getHardwares(): Observable<Hardware[]> {
-    return of(HARDWARES);
+    return this.http.get<Hardware[]>(this.hardwareURL)
+      .pipe(
+        tap(_ => console.log("Fetched hardware")),
+        catchError(this.handleError<Hardware[]>('getHardware', []))
+      );
+  }
+
+  getHardwareByCode(code: string): Observable<Hardware> {
+    return this.http.get<Hardware>(this.hardwareURL + `/${code}`)
+      .pipe(
+        tap(_ => console.log("Fetched hardware with code = " + code)),
+        catchError(this.handleError<Hardware>('getHardwareByCode'))
+      );
+  }
+
+  addHardware(hardware: Hardware): Observable<Hardware> {
+    return this.http.post<Hardware>(this.hardwareURL, hardware, this.httpOptions)
+      .pipe(
+        tap((newHardware: Hardware) => console.log(`Added hardware w/ code=${newHardware.code}`)),
+        catchError(this.handleError<Hardware>('addHardware'))
+      );
+  }
+
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+      console.error(operation);
+      console.error(error);
+      return of(result as T);
+    }
   }
 }

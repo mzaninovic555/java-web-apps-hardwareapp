@@ -9,7 +9,7 @@ import {HardwareService} from '../hardware.service';
 })
 export class HardwareComponent implements OnInit {
 
-  hardwares: Hardware[] | undefined;
+  hardwares!: Hardware[];
   selectedHardware: Hardware | undefined;
 
 
@@ -27,5 +27,18 @@ export class HardwareComponent implements OnInit {
 
   onSelect(hardware: Hardware): void {
     this.selectedHardware = hardware;
+  }
+
+  add(code: string, name: string, price: number, hardwareType: string, amount: number): void {
+    code = code.trim();
+    name = name.trim();
+    hardwareType = hardwareType.trim();
+
+    if(!code || !name || !price || !hardwareType || !amount){
+      return;
+    }
+
+    this.hardwareService.addHardware({code, name, price, hardwareType, amount} as Hardware)
+      .subscribe(hardware => {this.hardwares.push(hardware)})
   }
 }

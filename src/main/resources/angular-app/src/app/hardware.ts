@@ -1,4 +1,4 @@
 export interface Hardware {
-    name: string;
-    price: number;
+  name: string;
+  price: number;
 }

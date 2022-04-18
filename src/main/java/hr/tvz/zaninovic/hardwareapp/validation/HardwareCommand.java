@@ -15,7 +15,7 @@ public class HardwareCommand {
     private String name;
 
     @NotBlank(message = "Code must not be empty")
-    @Pattern(message = "Code must only contain digits", regexp = "[0-9]+")
+    @Pattern(message = "Code must only contain digits", regexp = "\\d+")
     private String code;
 
     @PositiveOrZero(message = "Price can't be a negative integer")

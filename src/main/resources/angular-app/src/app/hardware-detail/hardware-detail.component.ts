@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Hardware } from '../hardware';
+import {Component, Input, OnInit} from '@angular/core';
+import {Hardware} from '../hardware';
 
 @Component({
   selector: 'app-hardware-detail',
@@ -10,7 +10,8 @@ export class HardwareDetailComponent implements OnInit {
 
   @Input() hardware: Hardware | undefined;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

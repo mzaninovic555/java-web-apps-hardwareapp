@@ -1,12 +1,16 @@
 package hr.tvz.zaninovic.hardwareapp.domain;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
 @Getter
 public class Hardware {
+
     private String name;
 
     private String code;
@@ -18,11 +22,11 @@ public class Hardware {
     private int amount;
 
     @Override
-    public boolean equals(Object o){
-        if(this == o){
+    public boolean equals(Object o) {
+        if (this == o) {
             return true;
         }
-        if(o == null || getClass() != o.getClass()){
+        if (o == null || getClass() != o.getClass()) {
             return false;
         }
 

@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("hardware")
+@CrossOrigin(origins = "http://localhost:4200")
 public class HardwareController {
     private final HardwareService hardwareService;
 
@@ -20,12 +21,12 @@ public class HardwareController {
     }
 
     @GetMapping
-    public List<HardwareDTO> getAllHardware(){
+    public List<HardwareDTO> getAllHardware() {
         return hardwareService.findAll();
     }
 
     @GetMapping("/{code}")
-    public ResponseEntity<HardwareDTO> getHardwareByCode(@PathVariable final String code){
+    public ResponseEntity<HardwareDTO> getHardwareByCode(@PathVariable final String code) {
         return hardwareService
                 .findByCode(code)
                 .map(ResponseEntity::ok)
@@ -49,7 +50,7 @@ public class HardwareController {
 
     @DeleteMapping("/{code}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable String code){
+    public void delete(@PathVariable String code) {
         hardwareService.deleteByCode(code);
     }
 }

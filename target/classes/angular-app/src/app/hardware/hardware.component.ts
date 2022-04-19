@@ -33,7 +33,6 @@ export class HardwareComponent implements OnInit {
   add(code: string, name: string, price: number, hardwareType: string, amount: number): void {
     code = code.trim();
     name = name.trim();
-    hardwareType = hardwareType.trim();
 
     if(!code || !name || !price || !hardwareType || !amount){
       return;

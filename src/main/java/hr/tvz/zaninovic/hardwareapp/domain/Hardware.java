@@ -11,11 +11,11 @@ import lombok.Setter;
 @Getter
 public class Hardware {
 
-    private String name;
-
     private String code;
 
-    private double price;
+    private String name;
+
+    private Double price;
 
     private HardwareType hardwareType;
 

@@ -51,8 +51,8 @@ public class HardwareServiceImpl implements HardwareService {
 
     public Hardware mapCommandToHardware(final HardwareCommand hardwareCommand) {
         return new Hardware(
-                hardwareCommand.getName(),
                 hardwareCommand.getCode(),
+                hardwareCommand.getName(),
                 hardwareCommand.getPrice(),
                 hardwareCommand.getHardwareType(),
                 hardwareCommand.getAmount());

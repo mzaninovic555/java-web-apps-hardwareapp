@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Dodan enum, dodan select element u hardware.component.html">
+    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Format">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware-detail/hardware-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware-detail/hardware-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware/hardware.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware/hardware.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware/hardware.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware/hardware.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/MockHardwareRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/MockHardwareRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware-detail/hardware-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware-detail/hardware-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/angular-app/src/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/repository/MockHardwareRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/repository/MockHardwareRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,25 +48,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DELOMBOK_PRE_COMMIT&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a9ab41a24f2271d4962bebf845065157&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mzani\\Desktop\\java-web-apps-hardwareapp\\src\\main\\resources\\angular-app\\node_modules\\typescript\\lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DELOMBOK_PRE_COMMIT": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "a9ab41a24f2271d4962bebf845065157",
+    "ts.external.directory.path": "C:\\Users\\mzani\\Desktop\\java-web-apps-hardwareapp\\src\\main\\resources\\angular-app\\node_modules\\typescript\\lib"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="HardwareappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="hardwareapp" />
@@ -94,7 +102,7 @@
       <workItem from="1650307044904" duration="2604000" />
       <workItem from="1650357403125" duration="73000" />
       <workItem from="1650358589296" duration="95000" />
-      <workItem from="1650378887355" duration="626000" />
+      <workItem from="1650378887355" duration="2363000" />
     </task>
     <task id="LOCAL-00001" summary="Format">
       <created>1650283537978</created>
@@ -138,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650309666573</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Format">
+      <created>1650379524418</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650379524418</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +170,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="cetvrta-lab-vjezba" />
+                        <option value="peta-lab-vjezba" />
                       </list>
                     </value>
                   </entry>
@@ -169,11 +184,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Format" />
     <MESSAGE value="Angular spojen sa REST" />
     <MESSAGE value="Dodane metode, promijenjen stil" />
     <MESSAGE value="Popravljen delete" />
     <MESSAGE value="Dodan enum, dodan select element u hardware.component.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodan enum, dodan select element u hardware.component.html" />
+    <MESSAGE value="Format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Format" />
   </component>
 </project>

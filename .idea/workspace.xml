@@ -4,90 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Implementiran repozitorij">
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/app-routing/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware-detail/hardware-detail.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware-detail/hardware-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware-detail/hardware-detail.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware-detail/hardware-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware-type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware/hardware.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware/hardware.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware/hardware.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/app/hardware/hardware.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/angular-app/tsconfig.spec.json" afterDir="false" />
+    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Premjesten angular projekt iz resources foldera.">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/app-routing/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware-detail/hardware-detail.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware-detail/hardware-detail.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware-detail/hardware-detail.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware-detail/hardware-detail.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware-type.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware/hardware.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware/hardware.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware/hardware.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/app/hardware/hardware.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular-app/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +66,7 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "a9ab41a24f2271d4962bebf845065157",
-    "ts.external.directory.path": "C:\\Users\\mzani\\Desktop\\java-web-apps-hardwareapp\\src\\main\\resources\\angular-app\\node_modules\\typescript\\lib"
+    "ts.external.directory.path": "C:\\Users\\mzani\\Desktop\\java-web-apps-hardwareapp\\src\\main\\frontend\\angular-app\\node_modules\\typescript\\lib"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -194,6 +115,8 @@
       <workItem from="1650393521501" duration="423000" />
       <workItem from="1650902413934" duration="17000" />
       <workItem from="1650981435411" duration="167000" />
+      <workItem from="1650999408595" duration="17000" />
+      <workItem from="1651075783521" duration="153000" />
     </task>
     <task id="LOCAL-00001" summary="Format">
       <created>1650283537978</created>

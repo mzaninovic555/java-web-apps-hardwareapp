@@ -1,2 +1,2 @@
 # java-web-apps-hardwareapp
-Course for Java Spring apps.
+Course for Java Spring Apps.

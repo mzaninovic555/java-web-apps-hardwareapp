@@ -12,5 +12,5 @@ create table review (
     content varchar(255) not null,
     grade integer not null,
     hardware_Id integer not null,
-    foreign key(hardware_Id) references hardware(code)
+    foreign key(hardware_Id) references hardware(code) on delete cascade
 );

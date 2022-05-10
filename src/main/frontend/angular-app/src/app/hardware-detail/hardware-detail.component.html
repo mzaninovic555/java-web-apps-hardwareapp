@@ -13,4 +13,7 @@
       <span>{{review.grade}}/5</span> <br>
     </li>
   </ul>
+  <div *ngIf="reviews?.length == 0" class="row col-md-4 ms-3 mt-4 alert alert-danger">
+    <h2>Trenutno nema recenzija za: {{hardware!.name}}</h2>
+  </div>
 </div>

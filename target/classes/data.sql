@@ -15,16 +15,16 @@ insert into review(id, title, content, grade, hardware_Id)
     values(1, 'Core i7 11700 review', 'Powerful CPU', 5, 1);
 
 insert into review(id, title, content, grade, hardware_Id)
-    values(2, 'Core i7 11700 review 2', 'Powerful but expensive CPU', 4, 1);
+    values(2, 'Core i7 11700 review 2', 'Too expensive', 3, 1);
 
 insert into review(id, title, content, grade, hardware_Id)
-    values(3, 'Kingston NV1 1TB review', 'Fast storage', 5, 2);
+    values(3, 'Kingston NV1 1TB review', 'Fast NVME storage', 4, 2);
 
 insert into review(id, title, content, grade, hardware_Id)
-    values(4, 'Kingston NV1 1TB review 2', 'Powerful and fast NVME', 5, 2);
+    values(4, 'Kingston NV1 1TB review 2', 'Not enough storage', 2, 2);
 
 insert into review(id, title, content, grade, hardware_Id)
-    values(5, 'Corsair Vengeance LPX review', 'Fast RAM', 4, 3);
+    values(5, 'Corsair Vengeance LPX review', 'Fast and good looking', 5, 3);
 
 insert into review(id, title, content, grade, hardware_Id)
-    values(6, 'Nvidia GTX 1060 6GB review', 'Old but reliable', 3, 4);
+    values(6, 'Nvidia GTX 1060 6GB review', 'Old but still reliable', 4, 4);

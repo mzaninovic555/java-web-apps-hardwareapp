@@ -1,25 +1,59 @@
 package hr.tvz.zaninovic.hardwareapp.domain;
 
+import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
 @Getter
+@EqualsAndHashCode
 public class Hardware {
 
+    @Id
+    @GeneratedValue
     private String code;
 
+    @Column
     private String name;
 
+    @Column
     private Double price;
 
+    @Column(name = "hardware_type")
+    @Enumerated(EnumType.STRING)
     private HardwareType hardwareType;
 
+    @Column
     private int amount;
+
+    @OneToMany(mappedBy = "hardware", fetch = FetchType.EAGER)
+    private List<Review> reviews;
+
+    public Hardware(String code, String name, Double price, HardwareType hardwareType, int amount) {
+        this.code = code;
+        this.name = name;
+        this.price = price;
+        this.hardwareType = hardwareType;
+        this.amount = amount;
+    }
 
     @Override
     public boolean equals(Object o) {

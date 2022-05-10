@@ -14,43 +14,45 @@ import java.util.List;
 @RequestMapping("hardware")
 @CrossOrigin(origins = "http://localhost:4200")
 public class HardwareController {
-    private final HardwareService hardwareService;
 
-    public HardwareController(HardwareService hardwareService) {
-        this.hardwareService = hardwareService;
-    }
+  private final HardwareService hardwareService;
 
-    @GetMapping
-    public List<HardwareDTO> getAllHardware() {
-        return hardwareService.findAll();
-    }
+  public HardwareController(HardwareService hardwareService) {
+    this.hardwareService = hardwareService;
+  }
 
-    @GetMapping("/{code}")
-    public ResponseEntity<HardwareDTO> getHardwareByCode(@PathVariable final String code) {
-        return hardwareService
-                .findByCode(code)
-                .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
-    }
+  @GetMapping
+  public List<HardwareDTO> getAllHardware() {
+    return hardwareService.findAll();
+  }
 
-    @PostMapping
-    public ResponseEntity<HardwareDTO> save(@Valid @RequestBody final HardwareCommand hardwareCommand) {
-        return hardwareService
-                .save(hardwareCommand)
-                .map(
-                        hDTO -> ResponseEntity
-                                .status(HttpStatus.CREATED)
-                                .body(hDTO))
-                .orElseGet(
-                        () -> ResponseEntity
-                                .status(HttpStatus.CONFLICT)
-                                .build()
-                );
-    }
+  @GetMapping("/{code}")
+  public ResponseEntity<HardwareDTO> getHardwareByCode(@PathVariable final String code) {
+    return hardwareService
+        .findByCode(code)
+        .map(ResponseEntity::ok)
+        .orElseGet(() -> ResponseEntity.notFound().build());
+  }
 
-    @DeleteMapping("/{code}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable String code) {
-        hardwareService.deleteByCode(code);
-    }
+  @PostMapping
+  public ResponseEntity<HardwareDTO> save(
+      @Valid @RequestBody final HardwareCommand hardwareCommand) {
+    return hardwareService
+        .save(hardwareCommand)
+        .map(
+            hDTO -> ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(hDTO))
+        .orElseGet(
+            () -> ResponseEntity
+                .status(HttpStatus.CONFLICT)
+                .build()
+        );
+  }
+
+  @DeleteMapping("/{code}")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public void delete(@PathVariable String code) {
+    hardwareService.deleteByCode(code);
+  }
 }

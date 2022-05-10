@@ -20,7 +20,7 @@ import java.util.Optional;
 @Repository
 public class JDBCHardwareRepository implements HardwareRepository {
 
-    private static final String SELECT_ALL = "select code, name, price, hardwareType, amount from hardware ";
+    private static final String SELECT_ALL = "select code, name, price, hardware_type, amount from hardware ";
 
     private final JdbcTemplate jdbcTemplate;
     private final SimpleJdbcInsert simpleJdbcInsert;
@@ -62,7 +62,7 @@ public class JDBCHardwareRepository implements HardwareRepository {
 
         values.put("name", hardware.getName());
         values.put("price", hardware.getPrice());
-        values.put("hardwareType", hardware.getHardwareType());
+        values.put("hardware_type", hardware.getHardwareType());
         values.put("amount", hardware.getAmount());
 
         return simpleJdbcInsert.executeAndReturnKey(values).toString();
@@ -78,7 +78,7 @@ public class JDBCHardwareRepository implements HardwareRepository {
                 rs.getString("code"),
                 rs.getString("name"),
                 rs.getDouble("price"),
-                HardwareType.valueOf(rs.getString("hardwareType")),
+                HardwareType.valueOf(rs.getString("hardware_type")),
                 rs.getInt("amount")
         );
     }

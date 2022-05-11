@@ -22,14 +22,17 @@ export class ReviewDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.route.params.pipe(
-      switchMap(params => {
-        return this.reviewService.getReviewById(params["id"]);
-      })
-    ).subscribe((review: Review) => {
-      this.review = review;
-      this.hardwareService.getHardwareByCode(review.hardwareId)
-        .subscribe(hardware => this.hardware = hardware);
-    });
+    this.route.params
+      .pipe(
+        switchMap((params) => {
+          return this.reviewService.getReviewById(params['id']);
+        })
+      )
+      .subscribe((review: Review) => {
+        this.review = review;
+        this.hardwareService
+          .getHardwareByCode(review.hardwareId)
+          .subscribe((hardware) => (this.hardware = hardware));
+      });
   }
 }

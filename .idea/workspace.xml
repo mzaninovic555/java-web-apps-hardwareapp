@@ -4,10 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Implementiran kaskadni delete">
+    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Dodan alert ako nema recenzija za hardver">
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review-detail/review-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review-detail/review-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review-detail/review-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review-detail/review-detail.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app-routing/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app-routing/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/ReviewDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/ReviewDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/JPAReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/JPAReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/ReviewServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/controller/ReviewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/controller/ReviewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/ReviewDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/ReviewDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/repository/JPAReviewRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/repository/JPAReviewRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/ReviewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/ReviewService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/ReviewServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/ReviewServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="peta-lab-vjezba" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,6 +159,8 @@
       <workItem from="1650981435411" duration="167000" />
       <workItem from="1650999408595" duration="17000" />
       <workItem from="1651075783521" duration="153000" />
+      <workItem from="1652285568048" duration="1829000" />
+      <workItem from="1652287424275" duration="2578000" />
     </task>
     <task id="LOCAL-00001" summary="Format">
       <created>1650283537978</created>
@@ -226,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652022213152</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Dodan alert ako nema recenzija za hardver">
+      <created>1652214983936</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1652214983936</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +294,7 @@
     <MESSAGE value="Update na README.md." />
     <MESSAGE value="Dodan JPA repozitorij, domenske klase za Review, dodan Controller i Service za Review." />
     <MESSAGE value="Implementiran kaskadni delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementiran kaskadni delete" />
+    <MESSAGE value="Dodan alert ako nema recenzija za hardver" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodan alert ako nema recenzija za hardver" />
   </component>
 </project>

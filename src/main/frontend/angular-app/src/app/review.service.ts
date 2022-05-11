@@ -24,11 +24,27 @@ export class ReviewService {
       );
   }
 
+  getReviewById(id: number): Observable<Review> {
+    return this.http.get<Review>(this.reviewURL + `/${id}`)
+      .pipe(
+        tap(_ => console.log("Fetched review with id = " + id)),
+        catchError(this.handleError<Review>('getReviewByid'))
+      );
+  }
+
   getReviewsByHardwareCode(code: String): Observable<Review[]> {
     return this.http.get<Review[]>(this.reviewURL + `?code=${code}`)
       .pipe(
         tap(_ => console.log("Fetched review with code = " + code)),
         catchError(this.handleError<Review[]>('getReviewByCode'))
+      );
+  }
+
+  getReviewsByContent(content: String): Observable<Review[]> {
+    return this.http.get<Review[]>(this.reviewURL + `?content=${content}`)
+      .pipe(
+        tap(_ => console.log("Fetched review with content = " + content)),
+        catchError(this.handleError<Review[]>('getReviewBycontent'))
       );
   }
 

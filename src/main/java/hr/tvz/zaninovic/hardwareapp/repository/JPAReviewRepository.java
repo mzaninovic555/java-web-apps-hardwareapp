@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface JPAReviewRepository extends JpaRepository<Review, Integer> {
 
-  List<Review> findAll();
-
   List<Review> findAllByHardwareCode(String hardwareCode);
+
+  List<Review> findAllByContentContainingIgnoreCase(String content);
 }

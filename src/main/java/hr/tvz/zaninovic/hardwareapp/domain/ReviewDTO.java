@@ -12,9 +12,13 @@ import lombok.ToString;
 @Setter
 @ToString
 public class ReviewDTO {
+  private Integer id;
+
   private String title;
 
   private String content;
 
   private Integer grade;
+
+  private String hardwareId;
 }

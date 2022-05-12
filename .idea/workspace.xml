@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Dorađen zadatak sa laba">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_05_2022__00_42_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_05_2022__00_42__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_05_2022__00_44_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_05_2022__00_44_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_05_2022__00_44__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_05_2022__00_44__Changes_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review/review.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review/review.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review/review.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review/review.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app-routing/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app-routing/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review-detail/review-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review-detail/review-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/ReviewServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652290233395</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Dorađen zadatak sa laba">
+      <created>1652374040266</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1652374040266</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

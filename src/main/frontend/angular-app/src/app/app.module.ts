@@ -7,6 +7,7 @@ import {HardwareDetailComponent} from './hardware-detail/hardware-detail.compone
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {HttpClientModule} from "@angular/common/http";
 import { ReviewDetailComponent } from './review-detail/review-detail.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ReviewDetailComponent } from './review-detail/review-detail.component';
     HardwareComponent,
     HardwareDetailComponent,
     ReviewDetailComponent,
+    ReviewComponent,
   ],
   imports: [
     BrowserModule,

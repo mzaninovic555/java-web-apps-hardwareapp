@@ -2,9 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {Hardware} from '../hardware';
 import {HardwareService} from '../hardware.service';
 import {HardwareType} from "../hardware-type";
-import { Observable } from 'rxjs';
-import { Review } from '../review';
-import { ReviewService } from '../review.service';
 
 @Component({
   selector: 'app-hardware',
@@ -14,26 +11,19 @@ import { ReviewService } from '../review.service';
 export class HardwareComponent implements OnInit {
 
   hardwares!: Hardware[];
-  reviews!: Review[];
   selectedHardware: Hardware | undefined;
   public hardwareTypes = Object.values(HardwareType);
 
-  constructor(private hardwareService: HardwareService, private reviewService: ReviewService) {
+  constructor(private hardwareService: HardwareService) {
   }
 
   ngOnInit(): void {
     this.getHardwares();
-    this.getReviews();
   }
 
   getHardwares(): void {
     this.hardwareService.getHardwares()
       .subscribe(hardwares => this.hardwares = hardwares);
-  }
-
-  getReviews(): void {
-    this.reviewService.getReviews()
-      .subscribe(reviews => this.reviews = reviews);
   }
 
   onSelect(hardware: Hardware): void {
@@ -50,11 +40,6 @@ export class HardwareComponent implements OnInit {
 
     this.hardwareService.addHardware({code, name, price, hardwareType, amount} as Hardware)
       .subscribe(hardware => {this.hardwares.push(hardware)})
-  }
-
-  getReviewByContent(content: string): void {
-    this.reviewService.getReviewsByContent(content)
-      .subscribe(reviews => this.reviews = reviews)
   }
 
   delete(hardware: Hardware){

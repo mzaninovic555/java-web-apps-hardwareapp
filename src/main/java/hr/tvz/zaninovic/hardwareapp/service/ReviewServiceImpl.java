@@ -18,28 +18,43 @@ public class ReviewServiceImpl implements ReviewService {
 
   @Override
   public List<ReviewDTO> findAll() {
-    return jpaReviewRepository.findAll().stream().map(this::mapReviewToDTO).toList();
+    return jpaReviewRepository
+        .findAll()
+        .stream()
+        .map(this::mapReviewToDTO)
+        .toList();
   }
 
   @Override
   public Optional<ReviewDTO> findById(final Integer id) {
-    return jpaReviewRepository.findById(id).map(this::mapReviewToDTO);
+    return jpaReviewRepository
+        .findById(id)
+        .map(this::mapReviewToDTO);
   }
 
   @Override
   public List<ReviewDTO> findAllByHardwareCode(String hardwareCode) {
-    return jpaReviewRepository.findAllByHardwareCode(hardwareCode).stream()
-        .map(this::mapReviewToDTO).toList();
+    return jpaReviewRepository
+        .findAllByHardwareCode(hardwareCode)
+        .stream()
+        .map(this::mapReviewToDTO)
+        .toList();
   }
 
   @Override
   public List<ReviewDTO> findAllByContentContains(String content) {
-    return jpaReviewRepository.findAllByContentContainingIgnoreCase(content).stream()
+    return jpaReviewRepository
+        .findAllByContentContainingIgnoreCase(content)
+        .stream()
         .map(this::mapReviewToDTO).toList();
   }
 
   public ReviewDTO mapReviewToDTO(Review review) {
-    return new ReviewDTO(review.getId(), review.getTitle(), review.getContent(), review.getGrade(),
+    return new ReviewDTO(
+        review.getId(),
+        review.getTitle(),
+        review.getContent(),
+        review.getGrade(),
         review.getHardware().getCode());
   }
 }

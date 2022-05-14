@@ -1,12 +1,11 @@
 package hr.tvz.zaninovic.hardwareapp.validation;
 
 import hr.tvz.zaninovic.hardwareapp.domain.HardwareType;
-import lombok.Getter;
-
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.PositiveOrZero;
+import lombok.Getter;
 
 @Getter
 public class HardwareCommand {

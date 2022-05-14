@@ -2,19 +2,18 @@ package hr.tvz.zaninovic.hardwareapp.repository;
 
 import hr.tvz.zaninovic.hardwareapp.domain.Hardware;
 import hr.tvz.zaninovic.hardwareapp.domain.HardwareType;
-import org.springframework.context.annotation.Primary;
-import org.springframework.dao.DuplicateKeyException;
-import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
-import org.springframework.stereotype.Repository;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import org.springframework.context.annotation.Primary;
+import org.springframework.dao.DuplicateKeyException;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
+import org.springframework.stereotype.Repository;
 
 @Primary
 @Repository

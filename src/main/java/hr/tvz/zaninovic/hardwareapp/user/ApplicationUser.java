@@ -1,10 +1,9 @@
 package hr.tvz.zaninovic.hardwareapp.user;
 
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 public class ApplicationUser implements Serializable {
     @Serial

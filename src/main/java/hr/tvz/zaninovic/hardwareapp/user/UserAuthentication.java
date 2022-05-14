@@ -1,9 +1,8 @@
 package hr.tvz.zaninovic.hardwareapp.user;
 
-import org.springframework.security.authentication.AbstractAuthenticationToken;
-
 import java.io.Serial;
 import java.util.Objects;
+import org.springframework.security.authentication.AbstractAuthenticationToken;
 
 public class UserAuthentication extends AbstractAuthenticationToken {
     @Serial

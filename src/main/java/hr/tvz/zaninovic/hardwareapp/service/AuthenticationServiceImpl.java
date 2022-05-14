@@ -4,9 +4,8 @@ import hr.tvz.zaninovic.hardwareapp.domain.LoginDTO;
 import hr.tvz.zaninovic.hardwareapp.domain.User;
 import hr.tvz.zaninovic.hardwareapp.repository.UserRepository;
 import hr.tvz.zaninovic.hardwareapp.validation.LoginCommand;
-import org.springframework.stereotype.Service;
-
 import java.util.Optional;
+import org.springframework.stereotype.Service;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {

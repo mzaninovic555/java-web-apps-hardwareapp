@@ -2,11 +2,17 @@ package hr.tvz.zaninovic.hardwareapp.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.hibernate.annotations.BatchSize;
-
-import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import org.hibernate.annotations.BatchSize;
 
 @Entity
 public class User {

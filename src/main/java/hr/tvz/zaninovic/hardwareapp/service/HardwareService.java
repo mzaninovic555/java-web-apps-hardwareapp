@@ -2,8 +2,6 @@ package hr.tvz.zaninovic.hardwareapp.service;
 
 import hr.tvz.zaninovic.hardwareapp.domain.HardwareDTO;
 import hr.tvz.zaninovic.hardwareapp.validation.HardwareCommand;
-
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 

@@ -1,10 +1,10 @@
-import {Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Hardware} from '../hardware';
 import {ActivatedRoute} from "@angular/router";
 import {HardwareService} from "../hardware.service";
 import {switchMap} from "rxjs";
-import { ReviewService } from '../review.service';
-import { Review } from '../review';
+import {ReviewService} from '../review.service';
+import {Review} from '../review';
 
 @Component({
   selector: 'app-hardware-detail',

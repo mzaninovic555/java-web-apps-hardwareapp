@@ -3,11 +3,14 @@ package hr.tvz.zaninovic.hardwareapp.controller;
 import hr.tvz.zaninovic.hardwareapp.domain.LoginDTO;
 import hr.tvz.zaninovic.hardwareapp.service.AuthenticationService;
 import hr.tvz.zaninovic.hardwareapp.validation.LoginCommand;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
-
 import javax.validation.Valid;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping("authentication")

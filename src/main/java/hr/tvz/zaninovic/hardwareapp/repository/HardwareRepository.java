@@ -12,5 +12,7 @@ public interface HardwareRepository {
 
     Optional<Hardware> save(Hardware hardware);
 
+    Optional<Hardware> update(String code, Hardware hardware);
+
     void deleteByCode(String code);
 }

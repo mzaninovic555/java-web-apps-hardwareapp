@@ -1,5 +1,5 @@
-export interface Review {  
-    title: string,
-    content: string,
-    grade: number
+export interface Review {
+  title: string;
+  text: string;
+  rating: number;
 }

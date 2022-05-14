@@ -1,7 +1,7 @@
 export interface Hardware {
-  code: string,
   name: string;
+  type: string;
+  code: string;
+  stock: number;
   price: number;
-  hardwareType: string;
-  amount: number;
 }

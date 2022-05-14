@@ -1,6 +1,6 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {HardwareDetailComponent} from './hardware-detail.component';
+import { HardwareDetailComponent } from './hardware-detail.component';
 
 describe('HardwareDetailComponent', () => {
   let component: HardwareDetailComponent;

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -38,6 +39,12 @@ public class MockHardwareRepository implements HardwareRepository {
         } else {
             return Optional.empty();
         }
+    }
+
+    @Override
+    public Optional<Hardware> update(String code, Hardware hardware) {
+        //TODO implementacija mock update
+        return null;
     }
 
     @Override

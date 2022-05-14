@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -56,6 +57,16 @@ public class HardwareController {
                 .build()
         );
   }
+
+  @PutMapping("{code}")
+  public ResponseEntity<HardwareDTO> update(
+      @PathVariable final String code,
+      @Valid final HardwareCommand hardwareCommand) {
+    return hardwareService.update(code, hardwareCommand)
+        .map(ResponseEntity::ok)
+        .orElseGet(() -> ResponseEntity.notFound().build());
+  }
+
 
   @DeleteMapping("/{code}")
   @ResponseStatus(HttpStatus.NO_CONTENT)

@@ -1,8 +1,8 @@
-<h1 class="col-md-3 ms-5 mb-3 p-3 bg-dark text-white">Hardware App</h1>
-<div class="ms-5 mb-3 btn btn-secondary">
-  <nav>
-    <a routerLink="/hardware" style="text-decoration: none; color: white; font-weight: bold">Hardware List</a>
-  </nav>
+<div class="container-fluid">
+  <div class="w-100 text-end" *ngIf="authenticationService.isUserAuthenticated()">Prijavljeni ste kao
+    <strong>{{authenticationService.getAuthenticatedUserUsername()}}</strong> | <a href="#" (click)="logout()" class="link-primary">Odjava</a>
+  </div>
+  <div class="m-5">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<router-outlet></router-outlet>
-<!--<app-hardware></app-hardware>-->

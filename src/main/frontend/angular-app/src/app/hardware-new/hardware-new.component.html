@@ -1,0 +1,52 @@
+<h2>Unos Hardvera</h2>
+<div>
+  <h3>Unesi novi hardver</h3>
+  <div>
+    <label>Šifra:
+      <div>
+        <input #code />
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>Naziv:
+      <div>
+        <input #name />
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>Tip:
+      <div>
+        <select #type >
+          <option value="CPU">CPU</option>
+          <option value="GPU">GPU</option>
+          <option value="MBO">MBO</option>
+          <option value="RAM">RAM</option>
+          <option value="STORAGE">Pohrana podataka</option>
+          <option value="OTHER">Ostalo</option>
+        </select>
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>Broj komada na stanju:
+      <div>
+        <input type="number" #stock />
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>Cijena:
+      <div>
+        <input type="number" #price />
+      </div>
+    </label>
+  </div>
+
+  <button (click)="add(code.value, name.value, type.value, +stock.value, +price.value); code.value=''; name.value=''; type.value='CPU'; stock.value=''; price.value=''">
+    Unesi hardver
+  </button>
+
+  <button (click)="goBack()">go back</button>
+</div>

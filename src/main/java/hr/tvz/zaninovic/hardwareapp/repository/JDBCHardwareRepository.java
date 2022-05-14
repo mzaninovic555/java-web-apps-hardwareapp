@@ -68,6 +68,32 @@ public class JDBCHardwareRepository implements HardwareRepository {
     }
 
     @Override
+    public Optional<Hardware> update(String code, Hardware hardware) {
+        int executed =
+            jdbcTemplate.update(
+                """
+                        update hardware
+                        set code = ?,
+                            name = ?,
+                            price = ?,
+                            hardware_type = ?,
+                            amount = ?
+                        where code = ?
+                    """,
+                hardware.getCode(),
+                hardware.getName(),
+                hardware.getPrice(),
+                hardware.getHardwareType(),
+                hardware.getAmount()
+            );
+
+        if (executed > 0) {
+            return Optional.of(hardware);
+        }
+        return Optional.empty();
+    }
+
+    @Override
     public void deleteByCode(String code) {
         jdbcTemplate.update("delete from hardware where code = ?", code);
     }

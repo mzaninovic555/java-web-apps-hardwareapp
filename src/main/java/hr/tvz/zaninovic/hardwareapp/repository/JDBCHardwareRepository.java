@@ -19,92 +19,92 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class JDBCHardwareRepository implements HardwareRepository {
 
-    private static final String SELECT_ALL = "select code, name, price, hardware_type, amount from hardware ";
+  private static final String SELECT_ALL = "select code, name, price, hardware_type, amount from hardware ";
 
-    private final JdbcTemplate jdbcTemplate;
-    private final SimpleJdbcInsert simpleJdbcInsert;
+  private final JdbcTemplate jdbcTemplate;
+  private final SimpleJdbcInsert simpleJdbcInsert;
 
-    public JDBCHardwareRepository(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-        this.simpleJdbcInsert = new SimpleJdbcInsert(jdbcTemplate)
-                .withTableName("hardware")
-                .usingGeneratedKeyColumns("code");
+  public JDBCHardwareRepository(JdbcTemplate jdbcTemplate) {
+    this.jdbcTemplate = jdbcTemplate;
+    this.simpleJdbcInsert = new SimpleJdbcInsert(jdbcTemplate)
+        .withTableName("hardware")
+        .usingGeneratedKeyColumns("code");
+  }
+
+  @Override
+  public List<Hardware> findAll() {
+    return jdbcTemplate.query(SELECT_ALL, this::mapRowToHardware);
+  }
+
+  @Override
+  public Optional<Hardware> findByCode(String code) {
+    try {
+      return Optional.ofNullable(
+          jdbcTemplate.queryForObject(SELECT_ALL + "where code = ?", this::mapRowToHardware, code));
+    } catch (EmptyResultDataAccessException e) {
+      return Optional.empty();
     }
+  }
 
-    @Override
-    public List<Hardware> findAll() {
-        return jdbcTemplate.query(SELECT_ALL, this::mapRowToHardware);
+  @Override
+  public Optional<Hardware> save(Hardware hardware) {
+    try {
+      hardware.setCode(saveHardware(hardware));
+      return Optional.of(hardware);
+    } catch (DuplicateKeyException e) {
+      return Optional.empty();
     }
+  }
 
-    @Override
-    public Optional<Hardware> findByCode(String code) {
-        try {
-            return Optional.ofNullable(
-                    jdbcTemplate.queryForObject(SELECT_ALL + "where code = ?", this::mapRowToHardware, code));
-        } catch (EmptyResultDataAccessException e) {
-            return Optional.empty();
-        }
-    }
+  private String saveHardware(Hardware hardware) {
+    Map<String, Object> values = new HashMap<>();
 
-    @Override
-    public Optional<Hardware> save(Hardware hardware) {
-        try {
-            hardware.setCode(saveHardware(hardware));
-            return Optional.of(hardware);
-        } catch (DuplicateKeyException e) {
-            return Optional.empty();
-        }
-    }
+    values.put("name", hardware.getName());
+    values.put("price", hardware.getPrice());
+    values.put("hardware_type", hardware.getHardwareType());
+    values.put("amount", hardware.getAmount());
 
-    private String saveHardware(Hardware hardware) {
-        Map<String, Object> values = new HashMap<>();
+    return simpleJdbcInsert.executeAndReturnKey(values).toString();
+  }
 
-        values.put("name", hardware.getName());
-        values.put("price", hardware.getPrice());
-        values.put("hardware_type", hardware.getHardwareType());
-        values.put("amount", hardware.getAmount());
-
-        return simpleJdbcInsert.executeAndReturnKey(values).toString();
-    }
-
-    @Override
-    public Optional<Hardware> update(String code, Hardware hardware) {
-        int executed =
-            jdbcTemplate.update(
-                """
-                        update hardware
-                        set code = ?,
-                            name = ?,
-                            price = ?,
-                            hardware_type = ?,
-                            amount = ?
-                        where code = ?
-                    """,
-                hardware.getCode(),
-                hardware.getName(),
-                hardware.getPrice(),
-                hardware.getHardwareType(),
-                hardware.getAmount()
-            );
-
-        if (executed > 0) {
-            return Optional.of(hardware);
-        }
-        return Optional.empty();
-    }
-
-    @Override
-    public void deleteByCode(String code) {
-        jdbcTemplate.update("delete from hardware where code = ?", code);
-    }
-
-    private Hardware mapRowToHardware(ResultSet rs, int rowNum) throws SQLException {
-        return new Hardware(
-                rs.getString("code"),
-                rs.getString("name"),
-                rs.getDouble("price"),
-                HardwareType.valueOf(rs.getString("hardware_type")),
-                rs.getInt("amount")
+  @Override
+  public Optional<Hardware> update(String code, Hardware hardware) {
+    int executed =
+        jdbcTemplate.update(
+            """
+                    update hardware
+                    set code = ?,
+                        name = ?,
+                        price = ?,
+                        hardware_type = ?,
+                        amount = ?
+                    where code = ?
+                """,
+            hardware.getCode(),
+            hardware.getName(),
+            hardware.getPrice(),
+            hardware.getHardwareType(),
+            hardware.getAmount()
         );
+
+    if (executed > 0) {
+      return Optional.of(hardware);
     }
+    return Optional.empty();
+  }
+
+  @Override
+  public void deleteByCode(String code) {
+    jdbcTemplate.update("delete from hardware where code = ?", code);
+  }
+
+  private Hardware mapRowToHardware(ResultSet rs, int rowNum) throws SQLException {
+    return new Hardware(
+        rs.getString("code"),
+        rs.getString("name"),
+        rs.getDouble("price"),
+        HardwareType.valueOf(rs.getString("hardware_type")),
+        rs.getInt("amount")
+    );
+  }
 }

@@ -4,126 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Optimizirani importovi">
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/forbidden-page/forbidden-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/forbidden-page/forbidden-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-new/hardware-new.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-new/hardware-new.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-new/hardware-new.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-new/hardware-new.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardwares/hardwares.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardwares/hardwares.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardwares/hardwares.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardwares/hardwares.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/home/home.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/home/home.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/home/home.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/home/home.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/login/login.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/login/login.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/page-not-found/page-not-found.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/page-not-found/page-not-found.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/security/admin-authority.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/security/authentication.interceptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/security/authentication.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/security/jwt.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/security/logged-in.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/security/login.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/bootstrap-5.0.2-dist/js/bootstrap.min.js.map" afterDir="false" />
+    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Implementiran update, angular dodan">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.browserslistrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.vscode/extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.vscode/extensions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.vscode/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.vscode/tasks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app-routing/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-type.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware/hardware.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/review.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/HardwareappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/HardwareappApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/command/HardwareCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/command/HardwareCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/command/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/Hardware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/Hardware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/HardwareDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/HardwareDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/HardwareType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/HardwareType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/LoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/ReviewDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/ReviewDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/HardwareRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/HardwareRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/JDBCHardwareRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/JDBCHardwareRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/MockHardwareRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/MockHardwareRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/security/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/AuthenticationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/JwtServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/JwtServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/user/ApplicationUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/user/ApplicationUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/user/UserAuthentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/user/UserAuthentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/Authority.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/Authority.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/Hardware.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/Hardware.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/HardwareDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/HardwareDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/LoginDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/LoginDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/ReviewDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/ReviewDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/repository/HardwareRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/repository/HardwareRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/repository/JDBCHardwareRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/repository/JDBCHardwareRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/repository/MockHardwareRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/repository/MockHardwareRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/security/JwtFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/security/JwtFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/security/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/AuthenticationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/HardwareService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/HardwareService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/HardwareServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/HardwareServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/JwtServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/JwtServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/user/ApplicationUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/user/ApplicationUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/user/UserAuthentication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/user/UserAuthentication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/validation/HardwareCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/validation/LoginCommand.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +127,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
     "spring.configuration.checksum": "a9ab41a24f2271d4962bebf845065157",
     "ts.external.directory.path": "C:\\Users\\mzani\\Desktop\\java-web-apps-hardwareapp\\src\\main\\frontend\\angular-app\\node_modules\\typescript\\lib"
   },
@@ -256,7 +186,7 @@
       <workItem from="1650981435411" duration="167000" />
       <workItem from="1650999408595" duration="17000" />
       <workItem from="1651075783521" duration="153000" />
-      <workItem from="1652526886733" duration="4210000" />
+      <workItem from="1652526886733" duration="4538000" />
     </task>
     <task id="LOCAL-00001" summary="Format">
       <created>1650283537978</created>
@@ -363,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652529320611</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Implementiran update, angular dodan">
+      <created>1652531290369</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1652531290369</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,6 +343,7 @@
     <MESSAGE value="Implementiran kaskadni delete" />
     <MESSAGE value="Dodane datoteke iz security.zip" />
     <MESSAGE value="Optimizirani importovi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimizirani importovi" />
+    <MESSAGE value="Implementiran update, angular dodan" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementiran update, angular dodan" />
   </component>
 </project>

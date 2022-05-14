@@ -14,63 +14,65 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 @Component
 public class JwtFilter extends OncePerRequestFilter {
-    public static final String AUTHORIZATION_HEADER = "Authorization";
-    public static final String AUTHORIZATION_TOKEN_PREFIX = "Bearer ";
 
-    private static final Logger log = LoggerFactory.getLogger(JwtFilter.class);
+  public static final String AUTHORIZATION_HEADER = "Authorization";
+  public static final String AUTHORIZATION_TOKEN_PREFIX = "Bearer ";
 
-    private final JwtService jwtService;
+  private static final Logger log = LoggerFactory.getLogger(JwtFilter.class);
 
-    public JwtFilter(JwtService jwtService) {
-        this.jwtService = jwtService;
-    }
+  private final JwtService jwtService;
 
-    @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        request.setCharacterEncoding(StandardCharsets.UTF_8.name());
-        response.setCharacterEncoding(StandardCharsets.UTF_8.name());
+  public JwtFilter(JwtService jwtService) {
+    this.jwtService = jwtService;
+  }
 
-        if (!isEndpointAllowingUnauthenticatedAccess(request)) {
-            String jwtToken = extractJwtToken(request);
+  @Override
+  protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
+      FilterChain filterChain) throws ServletException, IOException {
+    request.setCharacterEncoding(StandardCharsets.UTF_8.name());
+    response.setCharacterEncoding(StandardCharsets.UTF_8.name());
 
-            log.trace("doFilter for endpoint: {} resolved jwt: {}", request.getRequestURI(), jwtToken);
+    if (!isEndpointAllowingUnauthenticatedAccess(request)) {
+      String jwtToken = extractJwtToken(request);
 
-            if (jwtToken != null && !jwtToken.isEmpty()) {
+      log.trace("doFilter for endpoint: {} resolved jwt: {}", request.getRequestURI(), jwtToken);
 
-                boolean authenticate = jwtService.authenticate(jwtToken);
+      if (jwtToken != null && !jwtToken.isEmpty()) {
 
-                if (!authenticate) {
-                    unauthorized(response);
-                }
+        boolean authenticate = jwtService.authenticate(jwtToken);
 
-            } else {
-                unauthorized(response);
-            }
+        if (!authenticate) {
+          unauthorized(response);
         }
 
-        filterChain.doFilter(request, response);
+      } else {
+        unauthorized(response);
+      }
     }
 
-    private void unauthorized(HttpServletResponse response) {
-        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-    }
+    filterChain.doFilter(request, response);
+  }
 
-    private String extractJwtToken(HttpServletRequest request) {
-        String bearerToken = request.getHeader(AUTHORIZATION_HEADER);
-        if (bearerToken != null && bearerToken.startsWith(AUTHORIZATION_TOKEN_PREFIX)) {
-            return bearerToken.substring(AUTHORIZATION_TOKEN_PREFIX.length());
-        }
-        return null;
-    }
+  private void unauthorized(HttpServletResponse response) {
+    response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+  }
 
-    private boolean isEndpointAllowingUnauthenticatedAccess(HttpServletRequest request) {
-        String uri = request.getRequestURI();
-        return SecurityConfiguration.UNAUTHENTICATED_ENDPOINTS
-                .stream()
-                .anyMatch(endpoint -> uri.contains(endpointWithoutWildcard(endpoint)));
+  private String extractJwtToken(HttpServletRequest request) {
+    String bearerToken = request.getHeader(AUTHORIZATION_HEADER);
+    if (bearerToken != null && bearerToken.startsWith(AUTHORIZATION_TOKEN_PREFIX)) {
+      return bearerToken.substring(AUTHORIZATION_TOKEN_PREFIX.length());
     }
+    return null;
+  }
 
-    private String endpointWithoutWildcard(String endpoint) {
-        return endpoint.replace("**", "");
-    }
+  private boolean isEndpointAllowingUnauthenticatedAccess(HttpServletRequest request) {
+    String uri = request.getRequestURI();
+    return SecurityConfiguration.UNAUTHENTICATED_ENDPOINTS
+        .stream()
+        .anyMatch(endpoint -> uri.contains(endpointWithoutWildcard(endpoint)));
+  }
+
+  private String endpointWithoutWildcard(String endpoint) {
+    return endpoint.replace("**", "");
+  }
 }

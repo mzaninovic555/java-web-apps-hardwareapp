@@ -1,8 +1,8 @@
 package hr.tvz.zaninovic.hardwareapp.controller;
 
+import hr.tvz.zaninovic.hardwareapp.command.HardwareCommand;
 import hr.tvz.zaninovic.hardwareapp.domain.HardwareDTO;
 import hr.tvz.zaninovic.hardwareapp.service.HardwareService;
-import hr.tvz.zaninovic.hardwareapp.command.HardwareCommand;
 import java.util.List;
 import javax.validation.Valid;
 import org.springframework.http.HttpStatus;

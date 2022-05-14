@@ -14,49 +14,51 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(
-        securedEnabled = true,
-        jsr250Enabled = true,
-        prePostEnabled = true
+    securedEnabled = true,
+    jsr250Enabled = true,
+    prePostEnabled = true
 )
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-    private static final Logger log = LoggerFactory.getLogger(SecurityConfiguration.class);
+  private static final Logger log = LoggerFactory.getLogger(SecurityConfiguration.class);
 
-    static final List<String> UNAUTHENTICATED_ENDPOINTS = List.of(
-            // TODO - popisati putanje koje ne trebaju biti prolaziti autentifikaciju
-    );
+  static final List<String> UNAUTHENTICATED_ENDPOINTS = List.of(
+      "/authentication/login",
+      "/h2-console/**"
+  );
 
-    private final JwtFilter jwtFilter;
+  private final JwtFilter jwtFilter;
 
-    public SecurityConfiguration(JwtFilter jwtFilter) {
-        this.jwtFilter = jwtFilter;
-        SecurityContextHolder.setStrategyName(SecurityContextHolder.MODE_INHERITABLETHREADLOCAL);
-    }
+  public SecurityConfiguration(JwtFilter jwtFilter) {
+    this.jwtFilter = jwtFilter;
+    SecurityContextHolder.setStrategyName(SecurityContextHolder.MODE_INHERITABLETHREADLOCAL);
+  }
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        // TODO - pobrinuti se da radi pristup h2 konzoli, slobodno ugasiti CORS, CSRF i slične zaštite
+  @Override
+  protected void configure(HttpSecurity http) throws Exception {
+    http = http.cors().and().csrf().disable();
+    http = http.headers().frameOptions().disable().and();
 
-        http = http
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and();
+    http = http
+        .sessionManagement()
+        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+        .and();
 
-        http = http
-                .exceptionHandling()
-                .authenticationEntryPoint(
-                        (request, response, e) -> {
-                            log.error("Unauthorized request - {}", e.getMessage());
-                            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.getMessage());
-                        }
-                )
-                .and();
+    http = http
+        .exceptionHandling()
+        .authenticationEntryPoint(
+            (request, response, e) -> {
+              log.error("Unauthorized request - {}", e.getMessage());
+              response.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.getMessage());
+            }
+        )
+        .and();
 
-        http.authorizeRequests()
-                .antMatchers(UNAUTHENTICATED_ENDPOINTS.toArray(new String[0])).permitAll()
-                .anyRequest().authenticated();
+    http.authorizeRequests()
+        .antMatchers(UNAUTHENTICATED_ENDPOINTS.toArray(new String[0])).permitAll()
+        .anyRequest().authenticated();
 
-        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
-    }
+    http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
+  }
 
 }

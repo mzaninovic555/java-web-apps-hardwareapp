@@ -4,8 +4,8 @@ import hr.tvz.zaninovic.hardwareapp.domain.User;
 
 public interface JwtService {
 
-    boolean authenticate(String token);
+  boolean authenticate(String token);
 
-    String createJwt(User user);
+  String createJwt(User user);
 
 }

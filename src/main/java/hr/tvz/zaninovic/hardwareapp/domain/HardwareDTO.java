@@ -12,9 +12,10 @@ import lombok.ToString;
 @Setter
 @ToString
 public class HardwareDTO {
-    private String code;
 
-    private String name;
+  private String code;
 
-    private double price;
+  private String name;
+
+  private double price;
 }

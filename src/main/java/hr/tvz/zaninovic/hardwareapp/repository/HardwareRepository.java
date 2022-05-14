@@ -6,13 +6,13 @@ import java.util.Optional;
 
 public interface HardwareRepository {
 
-    List<Hardware> findAll();
+  List<Hardware> findAll();
 
-    Optional<Hardware> findByCode(String code);
+  Optional<Hardware> findByCode(String code);
 
-    Optional<Hardware> save(Hardware hardware);
+  Optional<Hardware> save(Hardware hardware);
 
-    Optional<Hardware> update(String code, Hardware hardware);
+  Optional<Hardware> update(String code, Hardware hardware);
 
-    void deleteByCode(String code);
+  void deleteByCode(String code);
 }

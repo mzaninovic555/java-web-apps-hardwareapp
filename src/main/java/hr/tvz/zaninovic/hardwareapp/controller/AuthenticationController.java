@@ -2,7 +2,7 @@ package hr.tvz.zaninovic.hardwareapp.controller;
 
 import hr.tvz.zaninovic.hardwareapp.domain.LoginDTO;
 import hr.tvz.zaninovic.hardwareapp.service.AuthenticationService;
-import hr.tvz.zaninovic.hardwareapp.validation.LoginCommand;
+import hr.tvz.zaninovic.hardwareapp.command.LoginCommand;
 import javax.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;

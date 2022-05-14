@@ -3,7 +3,7 @@ package hr.tvz.zaninovic.hardwareapp.service;
 import hr.tvz.zaninovic.hardwareapp.domain.LoginDTO;
 import hr.tvz.zaninovic.hardwareapp.domain.User;
 import hr.tvz.zaninovic.hardwareapp.repository.UserRepository;
-import hr.tvz.zaninovic.hardwareapp.validation.LoginCommand;
+import hr.tvz.zaninovic.hardwareapp.command.LoginCommand;
 import java.util.Optional;
 import org.springframework.stereotype.Service;
 

@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Dodane datoteke iz security.zip">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Optimizirani importovi">
+      <change beforePath="$PROJECT_DIR$/delombok/src-bak/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/delombok/src-bak/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delombok/src-bak/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareService.java" beforeDir="false" afterPath="$PROJECT_DIR$/delombok/src-bak/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delombok/src-bak/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/delombok/src-bak/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delombok/src-bak/src/main/java/hr/tvz/zaninovic/hardwareapp/validation/HardwareCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/delombok/src-bak/src/main/java/hr/tvz/zaninovic/hardwareapp/validation/HardwareCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/AuthenticationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/HardwareServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/validation/HardwareCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/command/HardwareCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/validation/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/command/LoginCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,32 +73,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DELOMBOK_PRE_COMMIT&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a9ab41a24f2271d4962bebf845065157&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mzani\\Desktop\\java-web-apps-hardwareapp\\src\\main\\frontend\\angular-app\\node_modules\\typescript\\lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DELOMBOK_PRE_COMMIT": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "a9ab41a24f2271d4962bebf845065157",
+    "ts.external.directory.path": "C:\\Users\\mzani\\Desktop\\java-web-apps-hardwareapp\\src\\main\\frontend\\angular-app\\node_modules\\typescript\\lib"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hr.tvz.zaninovic.hardwareapp.service" />
@@ -139,7 +149,7 @@
       <workItem from="1650981435411" duration="167000" />
       <workItem from="1650999408595" duration="17000" />
       <workItem from="1651075783521" duration="153000" />
-      <workItem from="1652526886733" duration="2120000" />
+      <workItem from="1652526886733" duration="2335000" />
     </task>
     <task id="LOCAL-00001" summary="Format">
       <created>1650283537978</created>
@@ -232,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652528463098</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Optimizirani importovi">
+      <created>1652529128710</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1652529128710</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +291,7 @@
     <MESSAGE value="Dodan JPA repozitorij, domenske klase za Review, dodan Controller i Service za Review." />
     <MESSAGE value="Implementiran kaskadni delete" />
     <MESSAGE value="Dodane datoteke iz security.zip" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodane datoteke iz security.zip" />
+    <MESSAGE value="Optimizirani importovi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimizirani importovi" />
   </component>
 </project>

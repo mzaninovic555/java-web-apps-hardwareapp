@@ -2,7 +2,7 @@ package hr.tvz.zaninovic.hardwareapp.controller;
 
 import hr.tvz.zaninovic.hardwareapp.domain.HardwareDTO;
 import hr.tvz.zaninovic.hardwareapp.service.HardwareService;
-import hr.tvz.zaninovic.hardwareapp.validation.HardwareCommand;
+import hr.tvz.zaninovic.hardwareapp.command.HardwareCommand;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

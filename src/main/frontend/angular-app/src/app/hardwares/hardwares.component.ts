@@ -31,15 +31,15 @@ export class HardwaresComponent implements OnInit {
       .subscribe(hardwares => this.hardwares = hardwares);
   }
 
-  add(code: string, name: string, type: string, stock: number, price: number): void {
+  add(code: string, name: string, hardwareType: string, stock: number, price: number): void {
     code = code.trim();
     name = name.trim();
-    type = type.trim();
-    if (!code || !name || !type) {
+    hardwareType = hardwareType.trim();
+    if (!code || !name || !hardwareType) {
       return;
     }
 
-    this.hardwareService.addHardware({code, name, type, stock, price} as Hardware)
+    this.hardwareService.addHardware({code, name, hardwareType, stock, price} as Hardware)
       .subscribe(
         hardware => {
           this.hardwares?.push(hardware);

@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import {Hardware} from "../hardware";
 import {HardwareService} from "../hardware.service";
-import {Router} from "@angular/router";
 import {Location} from "@angular/common";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hardware-new',
@@ -17,15 +17,15 @@ export class HardwareNewComponent {
   ) {
   }
 
-  add(code: string, name: string, type: string, stock: number, price: number): void {
+  add(code: string, name: string, hardwareType: string, stock: number, price: number): void {
     code = code.trim();
     name = name.trim();
-    type = type.trim();
-    if (!code || !name || !type) {
+    hardwareType = hardwareType.trim();
+    if (!code || !name || !hardwareType) {
       return;
     }
 
-    this.hardwareService.addHardware({code, name, type, stock, price} as Hardware)
+    this.hardwareService.addHardware({code, name, hardwareType, stock, price} as Hardware)
       .subscribe(
         () => {
           this.router.navigate(['/hardwares']).then();

@@ -4,10 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Implementiran kaskadni delete">
+    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Dodane datoteke iz security.zip">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/security/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/AuthenticationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/service/JwtServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/user/ApplicationUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/user/UserAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/validation/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/hardware-detail/hardware-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,8 +134,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.HardwareappApplication" />
-        <item itemvalue="Spring Boot.HardwareappApplication" />
-        <item itemvalue="Spring Boot.HardwareappApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +157,7 @@
       <workItem from="1650981435411" duration="167000" />
       <workItem from="1650999408595" duration="17000" />
       <workItem from="1651075783521" duration="153000" />
+      <workItem from="1652526886733" duration="1537000" />
     </task>
     <task id="LOCAL-00001" summary="Format">
       <created>1650283537978</created>
@@ -267,6 +284,7 @@
     <MESSAGE value="Update na README.md." />
     <MESSAGE value="Dodan JPA repozitorij, domenske klase za Review, dodan Controller i Service za Review." />
     <MESSAGE value="Implementiran kaskadni delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementiran kaskadni delete" />
+    <MESSAGE value="Dodane datoteke iz security.zip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodane datoteke iz security.zip" />
   </component>
 </project>

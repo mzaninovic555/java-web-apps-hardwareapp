@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {Hardware} from "../hardware";
 import {HardwareService} from "../hardware.service";
 import {Location} from "@angular/common";
-import { Router } from '@angular/router';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-hardware-new',

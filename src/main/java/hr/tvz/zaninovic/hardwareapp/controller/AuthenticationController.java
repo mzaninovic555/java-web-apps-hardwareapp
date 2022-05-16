@@ -5,7 +5,6 @@ import hr.tvz.zaninovic.hardwareapp.domain.LoginDTO;
 import hr.tvz.zaninovic.hardwareapp.service.AuthenticationService;
 import javax.validation.Valid;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

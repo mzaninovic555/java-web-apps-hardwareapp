@@ -1,24 +1,23 @@
 <h2>Unos Hardvera</h2>
 <div>
-  <h3>Unesi novi hardver</h3>
   <div>
     <label>Šifra:
       <div>
-        <input #code />
+        <input #code class="form-control" />
       </div>
     </label>
   </div>
   <div>
     <label>Naziv:
       <div>
-        <input #name />
+        <input #name class="form-control" />
       </div>
     </label>
   </div>
   <div>
     <label>Tip:
       <div>
-        <select #type >
+        <select #type class="form-select">
           <option value="CPU">CPU</option>
           <option value="GPU">GPU</option>
           <option value="MBO">MBO</option>
@@ -32,21 +31,23 @@
   <div>
     <label>Broj komada na stanju:
       <div>
-        <input type="number" #stock />
+        <input type="number" #stock class="form-control" />
       </div>
     </label>
   </div>
-  <div>
+  <div class="mb-2">
     <label>Cijena:
       <div>
-        <input type="number" #price />
+        <input type="number" #price class="form-control" />
       </div>
     </label>
   </div>
 
-  <button (click)="add(code.value, name.value, type.value, +stock.value, +price.value); code.value=''; name.value=''; type.value='CPU'; stock.value=''; price.value=''">
+  <button
+    (click)="add(code.value, name.value, type.value, +stock.value, +price.value); code.value=''; name.value=''; type.value='CPU'; stock.value=''; price.value=''"
+    class="btn btn-danger me-2">
     Unesi hardver
   </button>
 
-  <button (click)="goBack()">go back</button>
+  <button (click)="goBack()" class="btn btn-danger">Go back</button>
 </div>

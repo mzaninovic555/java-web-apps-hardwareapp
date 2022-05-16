@@ -21,7 +21,7 @@ export class ReviewService {
   }
 
   getReviewsByHardwareCode(hardwareCode: string): Observable<Review[]> {
-    const params = new HttpParams().set('hardwareCode', hardwareCode);
+    const params = new HttpParams().set('code', hardwareCode);
 
     return this.http.get<Review[]>(this.reviewsUrl, {params})
       .pipe(

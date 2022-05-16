@@ -25,7 +25,6 @@ public class AuthenticationController {
   }
 
   @PostMapping("/login")
-  @Secured({"ROLE_ADMIN", "ROLE_USER"})
   public LoginDTO login(@Valid @RequestBody final LoginCommand command) {
     return authenticationService.login(command)
         .orElseThrow(

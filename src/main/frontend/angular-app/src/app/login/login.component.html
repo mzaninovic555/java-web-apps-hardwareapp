@@ -27,7 +27,7 @@
                        placeholder="Unesite lozinku" required type="password">
               </div>
               <button (click)="buttonLoginClick()" [disabled]="authenticating"
-                      class="btn btn-lg btn-primary btn-block mt-3" type="submit">Prijava <span
+                      class="btn btn-lg btn-danger btn-block mt-3" type="submit">Prijava <span
                 class="spinner-border spinner-border-sm" role="status" aria-hidden="true"
                 *ngIf="authenticating"></span>
               </button>

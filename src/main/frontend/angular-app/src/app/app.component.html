@@ -2,7 +2,7 @@
   <div class="w-100 text-end" *ngIf="authenticationService.isUserAuthenticated()">Prijavljeni ste kao
     <strong>{{authenticationService.getAuthenticatedUserUsername()}}</strong> | <a href="#" (click)="logout()" class="link-primary">Odjava</a>
   </div>
-  <div class="m-5">
+  <div>
     <router-outlet></router-outlet>
   </div>
 </div>

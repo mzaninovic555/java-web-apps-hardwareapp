@@ -4,47 +4,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="Dodana provjera sifri">
+    <list default="true" id="167fd1bb-1af5-42ef-bf68-76245c98aa59" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/command/HardwareCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/command/HardwareCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/AuthenticationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/service/AuthenticationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/app-routing/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware-detail/hardware-detail.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware-detail/hardware-detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware-detail/hardware-detail.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware-detail/hardware-detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware-type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware/hardware.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware/hardware.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware/hardware.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/app/hardware/hardware.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/angular-app/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hr/tvz/zaninovic/hardwareapp/HardwareappApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="peta-lab-vjezba" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
-      </map>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,7 +80,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="27yBs10ZqaZl3NhPxuBrkqfxM5g" />
+  <component name="ProjectId" id="29ElnYBjcCD8O0B6jW2VKlqKNPX" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -64,42 +88,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DELOMBOK_PRE_COMMIT&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a9ab41a24f2271d4962bebf845065157&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mzani\\Desktop\\java-web-apps-hardwareapp\\src\\main\\frontend\\angular-app\\node_modules\\typescript\\lib&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MTConfigurable",
+    "spring.configuration.checksum": "a9ab41a24f2271d4962bebf845065157"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="hr.tvz.zaninovic.hardwareapp.service" />
-      <recent name="hr.tvz.zaninovic.hardwareapp.repository" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mzani\Desktop\java-web-apps-hardwareapp" />
-    </key>
-  </component>
+}]]></component>
   <component name="RunManager">
     <configuration name="HardwareappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="hardwareapp" />
@@ -123,145 +126,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e79add6f-bf75-4b64-8f1e-982e8ddb869f" name="Changes" comment="" />
-      <created>1650282649581</created>
+      <changelist id="167fd1bb-1af5-42ef-bf68-76245c98aa59" name="Changes" comment="" />
+      <created>1652686301147</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1650282649581</updated>
-      <workItem from="1650282650832" duration="721000" />
-      <workItem from="1650283392651" duration="3595000" />
-      <workItem from="1650287033950" duration="6289000" />
-      <workItem from="1650307044904" duration="2604000" />
-      <workItem from="1650357403125" duration="73000" />
-      <workItem from="1650358589296" duration="95000" />
-      <workItem from="1650378887355" duration="3973000" />
-      <workItem from="1650393521501" duration="423000" />
-      <workItem from="1650902413934" duration="17000" />
-      <workItem from="1650981435411" duration="167000" />
-      <workItem from="1650999408595" duration="17000" />
-      <workItem from="1651075783521" duration="153000" />
-      <workItem from="1652526886733" duration="4844000" />
+      <updated>1652686301147</updated>
+      <workItem from="1652686306327" duration="789000" />
+      <workItem from="1652687149457" duration="358000" />
     </task>
-    <task id="LOCAL-00001" summary="Format">
-      <created>1650283537978</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1650283537978</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Angular spojen sa REST">
-      <created>1650290668013</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1650290668013</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Dodane metode, promijenjen stil">
-      <created>1650293365478</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1650293365478</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Popravljen delete">
-      <created>1650307666711</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1650307666711</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Dodan enum, dodan select element u hardware.component.html">
-      <created>1650309544735</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1650309544735</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Dodan enum, dodan select element u hardware.component.html">
-      <created>1650309666573</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1650309666573</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Format">
-      <created>1650379524418</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1650379524418</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Dodane sql skripte, dodane stavke u application.properties">
-      <created>1650381485447</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1650381485447</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Implementiran repozitorij">
-      <created>1650382843937</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1650382843937</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Update na README.md.">
-      <created>1652019001122</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1652019001122</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Dodan JPA repozitorij, domenske klase za Review, dodan Controller i Service za Review.">
-      <created>1652021855832</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1652021855832</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Implementiran kaskadni delete">
-      <created>1652022213152</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1652022213152</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Dodane datoteke iz security.zip">
-      <created>1652528463098</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1652528463098</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Optimizirani importovi">
-      <created>1652529128710</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1652529128710</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Optimizirani importovi">
-      <created>1652529320611</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1652529320611</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Implementiran update, angular dodan">
-      <created>1652531290369</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1652531290369</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Reformat koda, optimizirani importovi, rijeseni TODO">
-      <created>1652531582105</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1652531582105</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,19 +144,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="peta-lab-vjezba" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -292,20 +152,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Angular spojen sa REST" />
-    <MESSAGE value="Dodane metode, promijenjen stil" />
-    <MESSAGE value="Popravljen delete" />
-    <MESSAGE value="Dodan enum, dodan select element u hardware.component.html" />
-    <MESSAGE value="Format" />
-    <MESSAGE value="Dodane sql skripte, dodane stavke u application.properties" />
-    <MESSAGE value="Implementiran repozitorij" />
-    <MESSAGE value="Update na README.md." />
-    <MESSAGE value="Dodan JPA repozitorij, domenske klase za Review, dodan Controller i Service za Review." />
-    <MESSAGE value="Implementiran kaskadni delete" />
-    <MESSAGE value="Dodane datoteke iz security.zip" />
-    <MESSAGE value="Optimizirani importovi" />
-    <MESSAGE value="Implementiran update, angular dodan" />
-    <MESSAGE value="Reformat koda, optimizirani importovi, rijeseni TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformat koda, optimizirani importovi, rijeseni TODO" />
   </component>
 </project>

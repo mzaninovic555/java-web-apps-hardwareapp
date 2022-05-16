@@ -7,6 +7,7 @@ import java.util.List;
 import javax.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,11 +31,13 @@ public class HardwareController {
   }
 
   @GetMapping
+  @Secured({"ROLE_ADMIN", "ROLE_USER"})
   public List<HardwareDTO> getAllHardware() {
     return hardwareService.findAll();
   }
 
   @GetMapping("/{code}")
+  @Secured({"ROLE_ADMIN", "ROLE_USER"})
   public ResponseEntity<HardwareDTO> getHardwareByCode(@PathVariable final String code) {
     return hardwareService
         .findByCode(code)
@@ -43,6 +46,7 @@ public class HardwareController {
   }
 
   @PostMapping
+  @Secured({"ROLE_ADMIN"})
   public ResponseEntity<HardwareDTO> save(
       @Valid @RequestBody final HardwareCommand hardwareCommand) {
     return hardwareService
@@ -59,6 +63,7 @@ public class HardwareController {
   }
 
   @PutMapping("{code}")
+  @Secured({"ROLE_ADMIN"})
   public ResponseEntity<HardwareDTO> update(
       @PathVariable final String code,
       @Valid final HardwareCommand hardwareCommand) {
@@ -70,6 +75,7 @@ public class HardwareController {
 
   @DeleteMapping("/{code}")
   @ResponseStatus(HttpStatus.NO_CONTENT)
+  @Secured({"ROLE_ADMIN"})
   public void delete(@PathVariable String code) {
     hardwareService.deleteByCode(code);
   }

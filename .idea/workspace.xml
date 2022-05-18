@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="167fd1bb-1af5-42ef-bf68-76245c98aa59" name="Changes" comment="Promjena stila aplikacije">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/tvz/zaninovic/hardwareapp/controller/HardwareController.java" afterDir="false" />
+    <list default="true" id="167fd1bb-1af5-42ef-bf68-76245c98aa59" name="Changes" comment="Popravljeno krivo mapiranje json-a">
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hr/tvz/zaninovic/hardwareapp/controller/AuthenticationController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

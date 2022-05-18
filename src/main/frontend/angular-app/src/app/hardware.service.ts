@@ -1,6 +1,6 @@
-import {Injectable} from '@angular/core';
-import {catchError, Observable, of, tap} from 'rxjs';
-import {Hardware} from './hardware';
+import { Injectable } from '@angular/core';
+import {catchError, Observable, of, tap} from "rxjs";
+import {Hardware} from "./hardware";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 
 @Injectable({
@@ -8,47 +8,57 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 })
 export class HardwareService {
 
-  private hardwareURL = "http://localhost:8080/hardware";
+  private hardwaresURL = 'http://localhost:8080/hardware';
 
   httpOptions = {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   };
 
-  constructor(private http: HttpClient) {
-  }
+  constructor(private http: HttpClient) { }
 
   getHardwares(): Observable<Hardware[]> {
-    return this.http.get<Hardware[]>(this.hardwareURL)
+    return this.http.get<Hardware[]>(this.hardwaresURL)
       .pipe(
-        tap(_ => console.log("Fetched hardware")),
-        catchError(this.handleError<Hardware[]>('getHardware', []))
+        tap(_ => console.log('fetched hardwares')),
+        catchError(this.handleError<Hardware[]>('getHardwares', []))
       );
   }
 
-  getHardwareByCode(code: string): Observable<Hardware> {
-    return this.http.get<Hardware>(this.hardwareURL + `/${code}`)
+  getHardware(code: string): Observable<Hardware> {
+    const url = `${this.hardwaresURL}/${code}`;
+    return this.http.get<Hardware>(url)
       .pipe(
-        tap(_ => console.log("Fetched hardware with code = " + code)),
-        catchError(this.handleError<Hardware>('getHardwareByCode'))
+        tap(_ => console.log(`fetched hardware code=${code}`)),
+        catchError(this.handleError<Hardware>(`getHardware code=${code}`))
+      );
+  }
+
+  updateHardware(hardware: Hardware): Observable<any> {
+    const url = `${this.hardwaresURL}/${hardware.code}`;
+    return this.http.put(url, hardware, this.httpOptions)
+      .pipe(
+        tap(_ => console.log(`updated hardware code=${hardware.code}`)),
+        catchError(this.handleError<any>('updateHardware'))
       );
   }
 
   addHardware(hardware: Hardware): Observable<Hardware> {
-    return this.http.post<Hardware>(this.hardwareURL, hardware, this.httpOptions)
+    return this.http.post<Hardware>(this.hardwaresURL, hardware, this.httpOptions)
       .pipe(
-        tap((newHardware: Hardware) => console.log(`Added hardware w/ code=${newHardware.code}`)),
+        tap((newHardware: Hardware) => console.log(`added hardware w code=${newHardware.code}`)),
         catchError(this.handleError<Hardware>('addHardware'))
       );
   }
 
   deleteHardware(hardware: Hardware | string): Observable<Hardware> {
     const code = typeof hardware === 'string' ? hardware : hardware.code;
-    const url = `${this.hardwareURL}/${code}`;
+    const url = `${this.hardwaresURL}/${code}`;
 
-    return this.http.delete<Hardware>(url, this.httpOptions).pipe(
-      tap(_ => console.log(`deleted student JMBAG=${code}`)),
-      catchError(this.handleError<Hardware>('deleteStudent'))
-    );
+    return this.http.delete<Hardware>(url, this.httpOptions)
+      .pipe(
+        tap(_ => console.log(`deleted hardware code=${code}`)),
+        catchError(this.handleError<Hardware>('deleteHardware'))
+      );
   }
 
   private handleError<T>(operation = 'operation', result?: T) {
@@ -56,6 +66,6 @@ export class HardwareService {
       console.error(operation);
       console.error(error);
       return of(result as T);
-    }
+    };
   }
 }

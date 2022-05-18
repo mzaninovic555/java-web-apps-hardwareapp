@@ -1,19 +1,19 @@
 package hr.tvz.zaninovic.hardwareapp.service;
 
+import hr.tvz.zaninovic.hardwareapp.command.HardwareCommand;
 import hr.tvz.zaninovic.hardwareapp.domain.HardwareDTO;
-import hr.tvz.zaninovic.hardwareapp.validation.HardwareCommand;
-
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
 public interface HardwareService {
 
-    List<HardwareDTO> findAll();
+  List<HardwareDTO> findAll();
 
-    Optional<HardwareDTO> findByCode(String code);
+  Optional<HardwareDTO> findByCode(String code);
 
-    Optional<HardwareDTO> save(HardwareCommand hardwareCommand);
+  Optional<HardwareDTO> save(HardwareCommand hardwareCommand);
 
-    void deleteByCode(String code);
+  Optional<HardwareDTO> update(String code, HardwareCommand hardwareCommand);
+
+  void deleteByCode(String code);
 }

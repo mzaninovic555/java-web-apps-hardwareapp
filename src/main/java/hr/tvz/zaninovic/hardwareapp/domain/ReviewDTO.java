@@ -12,6 +12,7 @@ import lombok.ToString;
 @Setter
 @ToString
 public class ReviewDTO {
+
   private String title;
 
   private String content;

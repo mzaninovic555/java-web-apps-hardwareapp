@@ -28,3 +28,19 @@ insert into review(id, title, content, grade, hardware_Id)
 
 insert into review(id, title, content, grade, hardware_Id)
     values(6, 'Nvidia GTX 1060 6GB review', 'Old but still reliable', 4, 4);
+
+
+insert into user(id, username, password)
+    values
+        (1, 'user', '$2a$12$XiXxSbAP2O8F2haGfDuwFeXs7KFY0zgKt.YE6VgzpcUbByuY0hGcm'),
+        (2, 'admin', '$2a$12$h3fGG7atOBwnKgOzfJG2hOcTmFnOIuuIkZaJhB4TxLaGt8v5ehBuW');
+
+insert into authority(id, authority_name)
+    values
+        (1, 'ROLE_ADMIN'),
+        (2, 'ROLE_USER');
+
+insert into user_authority(user_id, authority_id)
+    values
+        (1, 2),
+        (2, 1);

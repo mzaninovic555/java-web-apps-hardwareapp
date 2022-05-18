@@ -1,4 +1,4 @@
-package hr.tvz.zaninovic.hardwareapp.validation;
+package hr.tvz.zaninovic.hardwareapp.command;
 
 import hr.tvz.zaninovic.hardwareapp.domain.HardwareType;
 import lombok.Getter;

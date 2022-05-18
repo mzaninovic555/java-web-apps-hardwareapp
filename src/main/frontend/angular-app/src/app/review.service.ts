@@ -1,37 +1,36 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, Observable, of, tap } from 'rxjs';
-import { Review } from './review';
+import {HttpClient, HttpParams} from "@angular/common/http";
+import {catchError, Observable, of, tap} from "rxjs";
+import {Review} from "./review";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ReviewService {
 
-  private reviewURL = "http://localhost:8080/review";
-
-  httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  };
+  private reviewsUrl = 'http://localhost:8080/review';
 
   constructor(private http: HttpClient) { }
 
   getReviews(): Observable<Review[]> {
-    return this.http.get<Review[]>(this.reviewURL)
+    return this.http.get<Review[]>(this.reviewsUrl)
       .pipe(
-        tap(_ => console.log("Fetched hardware")),
-        catchError(this.handleError<Review[]>('getHardware', []))
+        tap(_ => console.log('fetched reviews')),
+        catchError(this.handleError<Review[]>('getReviews', []))
       );
   }
 
-  getReviewsByHardwareCode(code: String): Observable<Review[]> {
-    return this.http.get<Review[]>(this.reviewURL + `?code=${code}`)
+  getReviewsByHardwareCode(hardwareCode: string): Observable<Review[]> {
+    const params = new HttpParams().set('code', hardwareCode);
+
+    return this.http.get<Review[]>(this.reviewsUrl, {params})
       .pipe(
-        tap(_ => console.log("Fetched review with code = " + code)),
-        catchError(this.handleError<Review[]>('getReviewByCode'))
+        tap(_ => console.log('fetched reviews hardwareCode=${hardwareCode}')),
+        catchError(this.handleError<Review[]>('getReviewsByHardwareCode hardwareCode=${hardwareCode}', []))
       );
   }
 
+  // tslint:disable-next-line:typedef
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(operation);

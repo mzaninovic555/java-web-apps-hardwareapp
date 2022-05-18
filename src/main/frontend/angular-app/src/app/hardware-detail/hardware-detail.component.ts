@@ -1,37 +1,54 @@
-import {Component, Input, OnDestroy, OnInit} from '@angular/core';
-import {Hardware} from '../hardware';
+import {Component, Input, OnInit} from '@angular/core';
+import {Hardware} from "../hardware";
 import {ActivatedRoute} from "@angular/router";
 import {HardwareService} from "../hardware.service";
-import {switchMap} from "rxjs";
-import { ReviewService } from '../review.service';
-import { Review } from '../review';
+import {Location} from "@angular/common";
+import {Review} from "../review";
+import {ReviewService} from "../review.service";
 
 @Component({
   selector: 'app-hardware-detail',
   templateUrl: './hardware-detail.component.html',
   styleUrls: ['./hardware-detail.component.css']
 })
-export class HardwareDetailComponent implements OnInit, OnDestroy {
+export class HardwareDetailComponent implements OnInit {
 
-  hardware: Hardware | undefined;
-  reviews: Review[] | undefined;
+  @Input() hardware?: Hardware;
+  reviews?: Review[];
 
-  constructor(private route: ActivatedRoute, private hardwareService: HardwareService, private reviewService: ReviewService) {
-  }
+  constructor(private route: ActivatedRoute, private hardwareService: HardwareService, private reviewService: ReviewService, private location: Location) { }
 
   ngOnInit(): void {
-    this.route.params.pipe(
-      switchMap(params => {
-        return this.hardwareService.getHardwareByCode(params["code"]);
-      })
-    ).subscribe((hardware: Hardware) => {
-      this.hardware = hardware;
-      this.reviewService.getReviewsByHardwareCode(this.hardware.code)
-        .subscribe(reviews => this.reviews = reviews);
-    });
+    this.getHardware();
   }
 
-  ngOnDestroy(): void {
+  getHardware(): void {
+    const code = this.route.snapshot.paramMap.get('code');
 
+    if (code !== null) {
+      this.hardwareService.getHardware(code)
+        .subscribe(hardware => {
+          this.hardware = hardware;
+          this.reviewService.getReviewsByHardwareCode(hardware.code).subscribe(
+            reviews => this.reviews = reviews
+          );
+        });
+    } else {
+      console.error('code can not be null!');
+    }
   }
+
+  save(): void {
+    if (this.hardware !== undefined) {
+      this.hardwareService.updateHardware(this.hardware)
+        .subscribe(() => this.goBack());
+    } else {
+      console.error('hardware can not be undefined!');
+    }
+  }
+
+  goBack(): void {
+    this.location.back();
+  }
+
 }

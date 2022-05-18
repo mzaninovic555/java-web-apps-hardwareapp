@@ -1,19 +1,22 @@
-<div *ngIf="hardware" class="row col-md-4 ms-5 mt-4">
-  <ul class="list-group">
-    <li class="list-group-item list-group-item-info">{{hardware!.name}} - detalji hardware-a</li>
-    <li class="list-group-item">Ime: {{hardware!.name}}</li>
-    <li class="list-group-item">Cijena: ${{hardware!.price}}</li>
-  </ul>
-</div>
-<div>
-  <ul class="row col-md-4 ms-3 mt-4">
-    <li *ngFor="let review of reviews" class="list-group-item mb-2">
-      <span class="badge bg-secondary">{{review.title}}</span> <br>
-      <span>{{review.content}}</span> <br>
-      <span>{{review.grade}}/5</span> <br>
-    </li>
-  </ul>
-  <div *ngIf="reviews?.length == 0" class="row col-md-4 ms-3 mt-4 alert alert-danger">
-    <h2>Trenutno nema recenzija za: {{hardware!.name}}</h2>
+<div *ngIf="hardware">
+  <h3>Detalji o {{ hardware.name }}</h3>
+  <div>
+    <span class="badge bg-danger p-2 m-2">  Cijena: {{ hardware.price }}  EUR</span>
   </div>
+  <div *ngIf="hardware.price > 1000">
+    Ovaj hardver se može kupiti na 6 rata.
+  </div>
+
+  <div *ngIf="reviews != null && reviews.length > 0" class="list-group">
+    <h3>Recenzije hardvera:</h3>
+    <ul>
+      <li *ngFor="let review of reviews" class="list-group-item">
+        {{ review.title }} --- {{ review.grade }}/5
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="reviews != null && reviews.length === 0">
+    <h3>Trenutno nema recenzija za ovaj hardver</h3>
+  </div>
+  <button (click)="goBack()" class="btn btn-danger">Go back</button>
 </div>

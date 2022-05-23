@@ -1,11 +1,24 @@
 <div class="container-fluid">
   <div class="w-100 text-end" *ngIf="authenticationService.isUserAuthenticated()">
-    Prijavljeni ste kao
+    {{'navbar.loggedInAs' |translate}}
     <strong>{{ authenticationService.getAuthenticatedUserUsername() }}</strong>
-    | <a href="#" (click)="logout()" class="btn btn-danger">Odjava</a>
+    | <a href="#" (click)="logout()" class="btn btn-danger">{{'navbar.logout' | translate}}</a>
   </div>
   <div class="text-end mt-2">
-    <button type="button" (click)="changeLanguage()" class="btn btn-danger">{{currentLanguage}}</button>
+    <!-- Example single danger button -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        {{'language.change' | translate}}
+      </button>
+      <ul class="dropdown-menu">
+        <li> <button type="button" (click)="changeLanguage('hr')" class="dropdown-item"><img width="30px" height="30px"
+              src="../assets/icons/hr.svg" class="me-2" style="display: inline-block;">{{'language.croatian' |
+            translate}}</button></li>
+        <li> <button type="button" (click)="changeLanguage('en')" class="dropdown-item"><img width="30px" height="30px"
+              src="../assets/icons/en.svg" class="me-2" style="display: inline-block;">{{'language.english' |
+            translate}}</button></li>
+      </ul>
+    </div>
   </div>
   <div>
     <router-outlet></router-outlet>

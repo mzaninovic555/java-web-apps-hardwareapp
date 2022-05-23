@@ -22,15 +22,15 @@ export class AppComponent {
     this.currentLanguage = translate.currentLang;
   }
 
-  changeLanguage(): void {
-    switch(this.translate.currentLang){
+  changeLanguage(newLanguage: string): void {
+    switch(newLanguage){
       case 'hr':
-        this.translate.use('en');
-        this.currentLanguage = 'en';
-        break;
-      case 'en':
         this.translate.use('hr');
         this.currentLanguage = 'hr';
+        break;
+      case 'en':
+        this.translate.use('en');
+        this.currentLanguage = 'en';
         break;
     }
   }

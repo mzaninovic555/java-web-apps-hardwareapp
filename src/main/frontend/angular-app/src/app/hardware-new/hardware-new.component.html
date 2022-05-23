@@ -1,21 +1,21 @@
-<h2>Unos Hardvera</h2>
+<h2>{{'newHardwareForm.title' | translate}}</h2>
 <div>
   <div>
-    <label>Šifra:
+    <label>{{'newHardwareForm.code' | translate}}:
       <div>
         <input #code class="form-control" />
       </div>
     </label>
   </div>
   <div>
-    <label>Naziv:
+    <label>{{'newHardwareForm.name' | translate}}:
       <div>
         <input #name class="form-control" />
       </div>
     </label>
   </div>
   <div>
-    <label>Tip:
+    <label>{{'newHardwareForm.type' | translate}}:
       <div>
         <select #type class="form-select">
           <option value="CPU">CPU</option>
@@ -29,14 +29,14 @@
     </label>
   </div>
   <div>
-    <label>Broj komada na stanju:
+    <label>{{'newHardwareForm.amount' | translate}}:
       <div>
         <input type="number" #stock class="form-control" />
       </div>
     </label>
   </div>
   <div class="mb-2">
-    <label>Cijena:
+    <label>{{'newHardwareForm.price' | translate}}:
       <div>
         <input type="number" #price class="form-control" />
       </div>
@@ -46,8 +46,8 @@
   <button
     (click)="add(code.value, name.value, type.value, +stock.value, +price.value); code.value=''; name.value=''; type.value='CPU'; stock.value=''; price.value=''"
     class="btn btn-danger me-2">
-    Unesi hardver
+    {{'newHardwareForm.commitButton' | translate}}
   </button>
 
-  <button (click)="goBack()" class="btn btn-danger">Go back</button>
+  <button (click)="goBack()" class="btn btn-danger">{{'newHardwareForm.back' | translate}}</button>
 </div>

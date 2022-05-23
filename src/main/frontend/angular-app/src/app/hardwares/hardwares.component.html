@@ -1,4 +1,4 @@
-<h2>Hardver</h2>
+<h2>{{'hardwareList.title' | translate}}</h2>
 <div class="list-group">
   <ul class="hardwares">
     <li *ngFor="let hardware of hardwares">
@@ -27,7 +27,7 @@
   </ul>
   <div>
     <button *ngIf="isUserAdmin" (click)="newHardware()" class="btn btn-danger">
-      Unesi novi hardver
+      {{'hardwareList.newHardware' | translate}}
     </button>
   </div>
 </div>

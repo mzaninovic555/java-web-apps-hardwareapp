@@ -1,0 +1,49 @@
+{
+    "language": {
+      "croatian": "Croatian",
+      "english": "English"
+    },
+    "login": {
+      "login": "Login",
+      "username": "Username",
+      "labelUsername": "Enter your username",
+      "password": "Password",
+      "labelPassword": "Enter your password"
+    },
+    "home": {
+      "hardwareButton": "Hardwares"
+    },
+    "navbar": {
+      "loggedInAs": "Logged in as",
+      "logout": "Logout"
+    },
+    "hardwareList": {
+      "title": "Hardware",
+      "newHardware": "New Hardware"
+    },
+    "newHardwareForm": {
+      "title": "Hardware Form",
+      "code": "Code",
+      "name": "Name",
+      "type": "Type",
+      "amount": "Stock",
+      "price": "Price",
+      "commitButton": "Send Form",
+      "backButton": "Back"
+    },
+    "hardwareDetails": {
+      "title": "Details about",
+      "price": "Price",
+      "reviewTitle": "Review of",
+      "back": "Back"
+    },
+    "forbidden": {
+      "message": "You're not authorized to view this page!",
+      "homePage": "Back to homepage"
+    },
+    "notFound": {
+      "message": "The requested page was not found.",
+      "homePage": "Back to homepage"
+    }
+  }
+  

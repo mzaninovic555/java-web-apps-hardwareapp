@@ -1,6 +1,11 @@
 <div class="container-fluid">
-  <div class="w-100 text-end" *ngIf="authenticationService.isUserAuthenticated()">Prijavljeni ste kao
-    <strong>{{authenticationService.getAuthenticatedUserUsername()}}</strong> | <a href="#" (click)="logout()" class="link-primary">Odjava</a>
+  <div class="w-100 text-end" *ngIf="authenticationService.isUserAuthenticated()">
+    Prijavljeni ste kao
+    <strong>{{ authenticationService.getAuthenticatedUserUsername() }}</strong>
+    | <a href="#" (click)="logout()" class="btn btn-danger">Odjava</a>
+  </div>
+  <div class="text-end mt-2">
+    <button type="button" (click)="changeLanguage()" class="btn btn-danger">{{currentLanguage}}</button>
   </div>
   <div>
     <router-outlet></router-outlet>

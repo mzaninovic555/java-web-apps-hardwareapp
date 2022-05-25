@@ -6,7 +6,9 @@
   "language": {
     "change": "Promjena jezika",
     "croatian": "Hrvatski",
-    "english": "Engleski"
+    "english": "Engleski",
+    "german": "Njemački",
+    "japanese": "Japanski"
   },
   "login": {
     "login": "Prijava",

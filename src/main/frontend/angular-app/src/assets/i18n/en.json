@@ -6,7 +6,9 @@
   "language": {
     "change": "Change language",
     "croatian": "Croatian",
-    "english": "English"
+    "english": "English",
+    "german": "German",
+    "japanese": "Japanese"
   },
   "login": {
     "login": "Login",

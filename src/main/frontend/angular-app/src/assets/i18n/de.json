@@ -1,0 +1,55 @@
+{
+  "general": {
+    "app": "Hardware-App",
+    "acronym": "HW-APP"
+  },
+  "language": {
+    "change": "Sprache ändern",
+    "croatian": "Kroatisch",
+    "english": "Englisch"
+  },
+  "login": {
+    "login": "Login",
+    "username": "Nutzername",
+    "labelUsername": "Geben Sie Ihren Benutzernamen ein",
+    "password": "Passwort",
+    "labelPassword": "Geben Sie Ihr Passwort ein",
+    "error": "Bei der Anmeldung ist ein Fehler aufgetreten, überprüfen Sie Ihren Benutzernamen und Ihr Passwort und versuchen Sie es dann erneut"
+  },
+  "home": {
+    "hardwareButton": "Hardware"
+  },
+  "navbar": {
+    "loggedInAs": "Eingeloggt als",
+    "logout": "Logout"
+  },
+  "hardwareList": {
+    "title": "Hardware",
+    "newHardware": "Neue Hardware"
+  },
+  "newHardwareForm": {
+    "title": "Hardware-Formular",
+    "code": "Code",
+    "name": "Name",
+    "type": "Art",
+    "amount": "Lager",
+    "price": "Preis",
+    "commitButton": "Formular absenden",
+    "back": "Zurück"
+  },
+  "hardwareDetails": {
+    "title": "Details zu",
+    "price": "Preis",
+    "reviewTitle": "Überprüfung von",
+    "back": "Zurück",
+    "noReviews": "Derzeit gibt es keine Bewertungen für die ausgewählte Hardware."
+  },
+  "forbidden": {
+    "message": "Sie sind nicht berechtigt, diese Seite anzuzeigen!",
+    "homePage": "Zurück zur Startseite"
+  },
+  "notFound": {
+    "message": "Die angeforderte Seite wurde nicht gefunden.",
+    "homePage": "Zurück zur Startseite"
+  }
+}

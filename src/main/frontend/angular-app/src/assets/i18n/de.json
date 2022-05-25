@@ -3,10 +3,16 @@
     "app": "Hardware-App",
     "acronym": "HW-APP"
   },
+
   "language": {
     "change": "Sprache ändern",
     "croatian": "Kroatisch",
-    "english": "Englisch"
+    "english": "Englisch",
+    "german": "Deutsch",
+    "japanese": "Japanisch",
+    "spanish": "Spanisch",
+    "french": "Französisch",
+    "italian": "Italienisch"
   },
   "login": {
     "login": "Login",

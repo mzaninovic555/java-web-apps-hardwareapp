@@ -8,7 +8,10 @@
     "croatian": "Hrvatski",
     "english": "Engleski",
     "german": "Njemački",
-    "japanese": "Japanski"
+    "japanese": "Japanski",
+    "spanish": "Španjolski",
+    "french": "Francuski",
+    "italian": "Talijanski"
   },
   "login": {
     "login": "Prijava",

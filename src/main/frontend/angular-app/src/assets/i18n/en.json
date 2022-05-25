@@ -8,7 +8,10 @@
     "croatian": "Croatian",
     "english": "English",
     "german": "German",
-    "japanese": "Japanese"
+    "japanese": "Japanese",
+    "spanish": "Spanish",
+    "french": "French",
+    "italian": "Italian"
   },
   "login": {
     "login": "Login",

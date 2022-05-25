@@ -27,9 +27,27 @@
           </button>
         </li>
         <li>
+          <button type="button" (click)="changeLanguage('es')" class="dropdown-item">
+            <img width="30px" height="30px" src="../assets/icons/es.svg" alt="esflag" class="me-2" style="display: inline-block" />
+            {{"language.spanish" | translate }}
+          </button>
+        </li>
+        <li>
+          <button type="button" (click)="changeLanguage('fr')" class="dropdown-item">
+            <img width="30px" height="30px" src="../assets/icons/fr.svg" alt="frflag" class="me-2" style="display: inline-block" />
+            {{"language.french" | translate }}
+          </button>
+        </li>
+        <li>
           <button type="button" (click)="changeLanguage('hr')" class="dropdown-item">
             <img width="30px" height="30px" src="../assets/icons/hr.svg" alt="hrflag" class="me-2" style="display: inline-block" />
             {{"language.croatian" | translate }}
+          </button>
+        </li>
+        <li>
+          <button type="button" (click)="changeLanguage('it')" class="dropdown-item">
+            <img width="30px" height="30px" src="../assets/icons/it.svg" alt="itflag" class="me-2" style="display: inline-block" />
+            {{"language.italian" | translate }}
           </button>
         </li>
         <li>

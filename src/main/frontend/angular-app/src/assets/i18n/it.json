@@ -1,0 +1,61 @@
+{
+  "general": {
+    "app": "HardwareApp",
+    "acronym": "HW APP"
+  },
+
+  "language": {
+    "change": "Cambia lingua",
+    "croatian": "Croato",
+    "english": "Inglese",
+    "german": "Tedesco",
+    "japanese": "Giapponese",
+    "spanish": "Spagnolo",
+    "french": "Francese",
+    "italian": "Italiano"
+  },
+  "login": {
+    "login": "Accesso",
+    "username": "Nome utente",
+    "labelUsername": "Inserisci il tuo nome utente",
+    "password": "Parola d’ordine",
+    "labelPassword": "Inserisci la tua password",
+    "error": "Si è verificato un errore durante l'accesso, controllare il nome utente e la password, quindi riprovare"
+  },
+  "home": {
+    "hardwareButton": "Hardware"
+  },
+  "navbar": {
+    "loggedInAs": "Effettuato l'accesso come",
+    "logout": "Logout"
+  },
+  "hardwareList": {
+    "title": "Hardware",
+    "newHardware": "Nuovo hardware"
+  },
+  "newHardwareForm": {
+    "title": "Modulo hardware",
+    "code": "Codice",
+    "name": "Nome",
+    "type": "Digitare",
+    "amount": "Ceppo",
+    "price": "Prezzo",
+    "commitButton": "Invia modulo",
+    "back": "Indietro"
+  },
+  "hardwareDetails": {
+    "title": "Dettagli su",
+    "price": "Prezzo",
+    "reviewTitle": "Recensione di",
+    "back": "Indietro",
+    "noReviews": "Attualmente non ci sono recensioni per l'hardware selezionato."
+  },
+  "forbidden": {
+    "message": "Non sei autorizzato a visualizzare questa pagina!",
+    "homePage": "Torna alla homepage"
+  },
+  "notFound": {
+    "message": "La pagina richiesta non è stata trovata.",
+    "homePage": "Torna alla homepage"
+  }
+}

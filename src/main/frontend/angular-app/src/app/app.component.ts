@@ -17,9 +17,16 @@ export class AppComponent {
     private router: Router,
     private translate: TranslateService
   ) {
-    translate.setDefaultLang('hr');
-    translate.use('hr');
-    this.currentLanguage = translate.currentLang;
+    if (localStorage.getItem('language')) {
+      translate.setDefaultLang(localStorage.getItem('language') || 'hr');
+      translate.use(localStorage.getItem('language') || 'hr');
+      this.currentLanguage = translate.currentLang;
+    } else {
+      translate.setDefaultLang('hr');
+      translate.use('hr');
+      this.currentLanguage = translate.currentLang;
+      localStorage.setItem("language", "hr");
+    }
   }
 
   changeLanguage(newLanguage: string): void {
@@ -27,18 +34,22 @@ export class AppComponent {
       case 'de':
         this.translate.use('de');
         this.currentLanguage = 'de';
+        localStorage.setItem("language", "de");
         break;
       case 'en':
         this.translate.use('en');
         this.currentLanguage = 'en';
+        localStorage.setItem("language", "en");
         break;
       case 'hr':
         this.translate.use('hr');
         this.currentLanguage = 'hr';
+        localStorage.setItem("language", "hr");
         break;
       case 'jp':
         this.translate.use('jp');
         this.currentLanguage = 'jp';
+        localStorage.setItem("language", "jp");
         break;
     }
   }

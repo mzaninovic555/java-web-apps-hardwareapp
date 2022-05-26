@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row justify-content-center pt-5">
       <div class="col text-center">
-        <h1 class="display-3 text-dark">Hardware App</h1>
+        <h1 class="display-3 text-dark">{{'general.app' | translate}}</h1>
         <h3 class="text-uppercase text-muted">HW APP</h3>
       </div>
     </div>
@@ -12,26 +12,26 @@
           <div class="card-body">
             <form #authenticationForm="ngForm" class="form-signin" name="authenticationForm">
               <div class="text-center mb-4">
-                <h1 class="h3 mb-3 fw-normal">Prijava</h1>
+                <h1 class="h3 mb-3 fw-normal">{{'login.login' | translate}}</h1>
               </div>
               <div class="form-label-group mb-3">
-                <label>Korisničko ime</label>
+                <label>{{'login.username' | translate}}</label>
                 <input [(ngModel)]="login.username" [disabled]="authenticating"
-                       autocomplete="username" class="form-control" name="username"
-                       placeholder="Unesite korisničko ime" required type="username">
+                       autocomplete="{{'login.username' | translate}}" class="form-control" name="username"
+                       placeholder="{{'login.labelUsername' | translate}}" required type="username">
               </div>
               <div class="form-label-group">
-                <label>Lozinka</label>
+                <label>{{'login.password' | translate}}</label>
                 <input [(ngModel)]="login.password" [disabled]="authenticating"
                        autocomplete="current-password" class="form-control" name="password"
-                       placeholder="Unesite lozinku" required type="password">
+                       placeholder="{{'login.labelPassword' | translate}}" required type="password">
               </div>
               <button (click)="buttonLoginClick()" [disabled]="authenticating"
-                      class="btn btn-lg btn-danger btn-block mt-3" type="submit">Prijava <span
+                      class="btn btn-lg btn-danger btn-block mt-3" type="submit">{{'login.login' | translate}} <span
                 class="spinner-border spinner-border-sm" role="status" aria-hidden="true"
                 *ngIf="authenticating"></span>
               </button>
-              <div class="text-danger mt-2" *ngIf="authenticationError">Došlo je do pogreške prilikom prijave, provjerite uneseno korisničko ime i lozinku te pokušajte ponovno.</div>
+              <div class="text-danger mt-2" *ngIf="authenticationError">{{'login.error' | translate}}</div>
             </form>
           </div>
         </div>

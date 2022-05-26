@@ -1,0 +1,63 @@
+{
+  "general": {
+    "app": "HardwareApp",
+    "acronym": "HW APP"
+  },
+
+  "language": {
+    "change": "Changer la langue",
+    "croatian": "Croate",
+    "english": "Anglais",
+    "german": "Allemand",
+    "japanese": "Japonais",
+    "spanish": "Espagnol",
+    "french": "Français",
+    "italian": "Italien"
+  },
+
+  "login": {
+    "login": "Connectez-vous",
+    "username": "Nom d’utilisateur",
+    "labelUsername": "Entrez votre nom d’utilisateur",
+    "password": "Mot de passe",
+    "labelPassword": "Entrez votre mot de passe",
+    "error": "Une erreur s’est produite lors de la connexion, vérifiez votre nom d’utilisateur et votre mot de passe, puis réessayez"
+  },
+  "home": {
+    "hardwareButton": "Matériel"
+  },
+  "navbar": {
+    "loggedInAs": "Connecté en tant que",
+    "logout": "Déconnexion"
+  },
+  "hardwareList": {
+    "title": "Matériel",
+    "newHardware": "Nouveau matériel"
+  },
+
+  "newHardwareForm": {
+    "title": "Formulaire matériel",
+    "code": "Code",
+    "name": "Nom",
+    "type": "Type",
+    "amount": "Stock",
+    "price": "Prix",
+    "commitButton": "Envoyer un formulaire",
+    "back": "Précédent"
+  },
+  "hardwareDetails": {
+    "title": "Détails sur",
+    "price": "Prix",
+    "reviewTitle": "Examen de",
+    "back": "Précédent",
+    "noReviews": "Actuellement, il n’y a pas d’avis pour le matériel sélectionné."
+  },
+  "forbidden": {
+    "message": "Vous n’êtes pas autorisé à consulter cette page !",
+    "homePage": "Retour à la page d’accueil"
+  },
+  "notFound": {
+    "message": "La page demandée est introuvable.",
+    "homePage": "Retour à la page d’accueil"
+  }
+}

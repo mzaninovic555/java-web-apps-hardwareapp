@@ -4,9 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="167fd1bb-1af5-42ef-bf68-76245c98aa59" name="Changes" comment="Implementiran kaskadni delete">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.gitignore" beforeDir="false" />
+    <list default="true" id="167fd1bb-1af5-42ef-bf68-76245c98aa59" name="Changes" comment="Dodani španjolski, francuski i talijanski.">
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/fr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/it.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/icons/es.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/icons/fr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/icons/it.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/.angular/cache/13.3.1/angular-webpack/0b46d09634049578bc90afc82de45dfdaa67e146/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/home/home.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/hr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/hr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/jp.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/angular-app/src/assets/i18n/jp.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,22 +54,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MTConfigurable",
-    "spring.configuration.checksum": "a9ab41a24f2271d4962bebf845065157",
-    "ts.external.directory.path": "C:\\Users\\mzani\\Desktop\\java-web-apps-hardwareapp\\src\\main\\frontend\\angular-app\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a9ab41a24f2271d4962bebf845065157&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mzani\\Desktop\\java-web-apps-hardwareapp\\src\\main\\frontend\\angular-app\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="HardwareappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="hardwareapp" />
@@ -81,6 +101,9 @@
       <workItem from="1652686306327" duration="789000" />
       <workItem from="1652687149457" duration="2609000" />
       <workItem from="1652701852360" duration="204000" />
+      <workItem from="1653325894308" duration="37000" />
+      <workItem from="1653494169489" duration="706000" />
+      <workItem from="1653505553253" duration="971000" />
     </task>
     <task id="LOCAL-00001" summary="Dodane security anotacije">
       <created>1652687682938</created>
@@ -103,7 +126,28 @@
       <option name="project" value="LOCAL" />
       <updated>1652691101627</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Dodani moduli Translate, dodani .json fileovi za hrvatski i engleski">
+      <created>1653322879186</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653322879186</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Aplikacija prevedena, dodan dropdown sa ikonama.">
+      <created>1653325059232</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653325059232</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Popravljen bug kod resetiranja jezika na refreshu.">
+      <created>1653499299870</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653499299870</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +168,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Dodane security anotacije" />
     <MESSAGE value="Promjena stila aplikacije" />
-    <option name="LAST_COMMIT_MESSAGE" value="Promjena stila aplikacije" />
+    <MESSAGE value="Dodani moduli Translate, dodani .json fileovi za hrvatski i engleski" />
+    <MESSAGE value="Aplikacija prevedena, dodan dropdown sa ikonama." />
+    <MESSAGE value="Dodan njemački i japanski prijevod" />
+    <MESSAGE value="Popravljen bug kod resetiranja jezika na refreshu." />
+    <MESSAGE value="Dodani španjolski, francuski i talijanski." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodani španjolski, francuski i talijanski." />
   </component>
 </project>

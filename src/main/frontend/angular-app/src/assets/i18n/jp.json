@@ -1,0 +1,60 @@
+{
+  "general": {
+    "app": "ハードウェアアプリ",
+    "acronym": "ハードウェアアプリ"
+  },
+  "language": {
+    "change": "言語の変更",
+    "croatian": "クロアチア語",
+    "english": "英語",
+    "german": "ドイツ語",
+    "japanese": "日本語",
+    "spanish": "スペイン語",
+    "french": "フランス語",
+    "italian": "イタリア語"
+  },
+  "login": {
+    "login": "ログイン",
+    "username": "ユーザー名",
+    "labelUsername": "ユーザー名を入力してください",
+    "password": "パスワード",
+    "labelPassword": "パスワードを入力してください",
+    "error": "ログイン中にエラーが発生したので、ユーザー名とパスワードを確認してから、もう一度やり直してください"
+  },
+  "home": {
+    "hardwareButton": "ハードウェア"
+  },
+  "navbar": {
+    "loggedInAs": "としてログイン",
+    "logout": "ログアウト"
+  },
+  "hardwareList": {
+    "title": "ハードウェア",
+    "newHardware": "新しいハードウェア"
+  },
+  "newHardwareForm": {
+    "title": "ハードウェアフォーム",
+    "code": "コード",
+    "name": "名前",
+    "type": "種類",
+    "amount": "株式",
+    "price": "価格",
+    "commitButton": "送信フォーム",
+    "back": "戻る"
+  },
+  "hardwareDetails": {
+    "title": "詳細",
+    "price": "価格",
+    "reviewTitle": "のレビュー",
+    "back": "戻る",
+    "noReviews": "現在、選択したハードウェアのレビューはありません。"
+  },
+  "forbidden": {
+    "message": "あなたはこのページを見る権限がありません!",
+    "homePage": "ホームページに戻る"
+  },
+  "notFound": {
+    "message": "要求されたページが見つかりませんでした。",
+    "homePage": "ホームページに戻る"
+  }
+}

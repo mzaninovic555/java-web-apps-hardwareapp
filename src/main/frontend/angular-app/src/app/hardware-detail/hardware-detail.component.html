@@ -1,14 +1,10 @@
 <div *ngIf="hardware">
-  <h3>Detalji o {{ hardware.name }}</h3>
+  <h3>{{'hardwareDetails.title' | translate}} {{ hardware.name }}</h3>
   <div>
-    <span class="badge bg-danger p-2 m-2">  Cijena: {{ hardware.price }}  EUR</span>
+    <span class="badge bg-danger p-2 m-2">  {{'hardwareDetails.price' | translate}}: {{ hardware.price }}  EUR</span>
   </div>
-  <div *ngIf="hardware.price > 1000">
-    Ovaj hardver se može kupiti na 6 rata.
-  </div>
-
   <div *ngIf="reviews != null && reviews.length > 0" class="list-group">
-    <h3>Recenzije hardvera:</h3>
+    <h3>{{'hardwareDetails.reviewTitle' | translate}}:</h3>
     <ul>
       <li *ngFor="let review of reviews" class="list-group-item">
         {{ review.title }} --- {{ review.grade }}/5
@@ -16,7 +12,7 @@
     </ul>
   </div>
   <div *ngIf="reviews != null && reviews.length === 0">
-    <h3>Trenutno nema recenzija za ovaj hardver</h3>
+    <h3>{{'hardwareDetails.noReviews' | translate}}</h3>
   </div>
-  <button (click)="goBack()" class="btn btn-danger">Go back</button>
+  <button (click)="goBack()" class="btn btn-danger">{{'hardwareDetails.back' | translate}}</button>
 </div>

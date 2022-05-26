@@ -1,0 +1,61 @@
+{
+  "general": {
+    "app": "HardwareApp",
+    "acronym": "HW APP"
+  },
+  "language": {
+    "change": "Cambiar idioma",
+    "croatian": "Croata",
+    "english": "Inglés",
+    "german": "Alemán",
+    "japanese": "Japonés",
+    "spanish": "Español",
+    "french": "Francés",
+    "italian": "Italiano"
+  },
+  "login": {
+    "login": "Iniciar sesión",
+    "username": "Nombre de usuario",
+    "labelUsername": "Introduce tu nombre de usuario",
+    "password": "Contraseña",
+    "labelPassword": "Introduzca su contraseña",
+    "error": "Hubo un error durante el inicio de sesión, verifique su nombre de usuario y contraseña, luego inténtelo de nuevo"
+  },
+  "home": {
+    "hardwareButton": "Hardware"
+  },
+  "navbar": {
+    "loggedInAs": "Iniciado sesión como",
+    "logout": "Cerrar sesión"
+  },
+  "hardwareList": {
+    "title": "Hardware",
+    "newHardware": "Nuevo hardware"
+  },
+
+  "newHardwareForm": {
+    "title": "Formulario de hardware",
+    "code": "Código",
+    "name": "Nombre",
+    "type": "Tipo",
+    "amount": "Acción",
+    "price": "Precio",
+    "commitButton": "Enviar formulario",
+    "back": "Atrás"
+  },
+  "hardwareDetails": {
+    "title": "Detalles sobre",
+    "price": "Precio",
+    "reviewTitle": "Reseña de",
+    "back": "Atrás",
+    "noReviews": "Actualmente no hay revisiones para el hardware seleccionado."
+  },
+  "forbidden": {
+    "message": "¡No estás autorizado a ver esta página!",
+    "homePage": "Volver a la página de inicio"
+  },
+  "notFound": {
+    "message": "No se encontró la página solicitada.",
+    "homePage": "Volver a la página de inicio"
+  }
+}

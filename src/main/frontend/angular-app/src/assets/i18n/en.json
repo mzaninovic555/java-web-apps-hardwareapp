@@ -1,0 +1,60 @@
+{
+  "general": {
+    "app": "HardwareApp",
+    "acronym": "HW APP"
+  },
+  "language": {
+    "change": "Change language",
+    "croatian": "Croatian",
+    "english": "English",
+    "german": "German",
+    "japanese": "Japanese",
+    "spanish": "Spanish",
+    "french": "French",
+    "italian": "Italian"
+  },
+  "login": {
+    "login": "Login",
+    "username": "Username",
+    "labelUsername": "Enter your username",
+    "password": "Password",
+    "labelPassword": "Enter your password",
+    "error": "There was an error during login, check your username and password, then try again"
+  },
+  "home": {
+    "hardwareButton": "Hardwares"
+  },
+  "navbar": {
+    "loggedInAs": "Logged in as",
+    "logout": "Logout"
+  },
+  "hardwareList": {
+    "title": "Hardware",
+    "newHardware": "New Hardware"
+  },
+  "newHardwareForm": {
+    "title": "Hardware Form",
+    "code": "Code",
+    "name": "Name",
+    "type": "Type",
+    "amount": "Stock",
+    "price": "Price",
+    "commitButton": "Send Form",
+    "back": "Back"
+  },
+  "hardwareDetails": {
+    "title": "Details about",
+    "price": "Price",
+    "reviewTitle": "Review of",
+    "back": "Back",
+    "noReviews": "Currently there are no reviews for the selected hardware."
+  },
+  "forbidden": {
+    "message": "You're not authorized to view this page!",
+    "homePage": "Back to homepage"
+  },
+  "notFound": {
+    "message": "The requested page was not found.",
+    "homePage": "Back to homepage"
+  }
+}

@@ -64,7 +64,7 @@ class HardwareControllerTest {
   @Test
   void getHardwareByCode() throws Exception {
     this.mockMvc.perform(
-            get("/hardware/" + 1)
+            get("/hardware/1")
                 .with(user("user").password("user").roles("USER"))
                 .with(csrf())
                 .header(HttpHeaders.AUTHORIZATION, "Bearer " + tokenUser))
@@ -106,7 +106,7 @@ class HardwareControllerTest {
 
   @Test
   @Transactional
-  void _roleAdmin() throws Exception {
+  void update_roleAdmin() throws Exception {
     this.mockMvc.perform(
         put("/hardware/1")
             .with(user("admin").password("admin").roles("ADMIN"))
@@ -120,7 +120,7 @@ class HardwareControllerTest {
 
   @Test
   @Transactional
-  void _roleUser() throws Exception {
+  void update_roleUser() throws Exception {
     this.mockMvc.perform(
             put("/hardware/1")
                 .with(user("user").password("user").roles("USER"))

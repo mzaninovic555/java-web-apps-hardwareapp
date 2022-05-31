@@ -33,7 +33,6 @@ class HardwareControllerTest {
 
   private final String tokenAdmin = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY1NDYwODMwOSwiaWF0IjoxNjU0MDAzNTA5LCJhdXRob3JpdGllcyI6IlJPTEVfQURNSU4ifQ.Mb-GxODv7FepzM8HYO3y_15iVxe7Rof_V7UVUOUfuL6x7UspPhLs-7R1zOpRA24Ul0k5bm3QxkSgqbbciSozzg";
   private final String tokenUser = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjU0NjA4NDM2LCJpYXQiOjE2NTQwMDM2MzYsImF1dGhvcml0aWVzIjoiUk9MRV9VU0VSIn0.hbHvanx7nLuy6UNNaIIccRTaw66d0pVJa6z3_j92qRbeC1J07ctoYDfx9xcK9c4YR6cuURoj8ZxI_md42k9XAg";
-  private final Integer testHardwareCode = 1;
 
   HardwareCommand testHardware =
       new HardwareCommand("test", "1", 1.99, HardwareType.CPU, 55);
@@ -63,7 +62,7 @@ class HardwareControllerTest {
   @Test
   void getHardwareByCode() throws Exception {
     this.mockMvc.perform(
-            get("/hardware/" + testHardwareCode)
+            get("/hardware/" + 1)
                 .with(user("user").password("user").roles("USER"))
                 .with(csrf())
                 .header(HttpHeaders.AUTHORIZATION, "Bearer " + tokenUser))

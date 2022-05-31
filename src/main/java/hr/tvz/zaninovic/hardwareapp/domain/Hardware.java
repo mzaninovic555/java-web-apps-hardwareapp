@@ -20,7 +20,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 @Getter
-@EqualsAndHashCode
 public class Hardware {
 
   @Id
@@ -61,6 +60,10 @@ public class Hardware {
     }
 
     Hardware hardware = (Hardware) o;
-    return code.equals(hardware.code);
+    return code.equals(hardware.code)
+        && name.equals(hardware.getName())
+        && price.equals(hardware.getPrice())
+        && hardwareType.equals(hardware.getHardwareType())
+        && amount == hardware.getAmount();
   }
 }

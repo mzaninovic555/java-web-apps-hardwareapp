@@ -15,10 +15,11 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-@TestInstance(Lifecycle.PER_CLASS)
+@AutoConfigureTestDatabase
 class HardwareRepositoryTest {
 
   @Autowired
@@ -27,7 +28,7 @@ class HardwareRepositoryTest {
   private final Hardware testHardware =
       new Hardware("5", "test", 99.99, HardwareType.CPU, 10);
 
-  @BeforeAll
+  @BeforeEach
   public void setUp() {
     hardwareRepository.save(testHardware);
   }
@@ -84,6 +85,6 @@ class HardwareRepositoryTest {
     List<Hardware> foundAll = hardwareRepository.findAll();
 
     assertEquals(foundAll.size(), 4);
-    assertFalse(foundAll.stream().anyMatch(h -> h.equals(testHardware)));
+    assertFalse(foundAll.contains(testHardware));
   }
 }

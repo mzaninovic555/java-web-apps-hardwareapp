@@ -73,18 +73,17 @@ public class JDBCHardwareRepository implements HardwareRepository {
         jdbcTemplate.update(
             """
                     update hardware
-                    set code = ?,
-                        name = ?,
+                    set name = ?,
                         price = ?,
                         hardware_type = ?,
                         amount = ?
                     where code = ?
                 """,
-            hardware.getCode(),
             hardware.getName(),
             hardware.getPrice(),
-            hardware.getHardwareType(),
-            hardware.getAmount()
+            hardware.getHardwareType().toString(),
+            hardware.getAmount(),
+            code
         );
 
     if (executed > 0) {

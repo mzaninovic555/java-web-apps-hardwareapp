@@ -64,7 +64,7 @@ public class HardwareController {
   @Secured({"ROLE_ADMIN"})
   public ResponseEntity<HardwareDTO> update(
       @PathVariable final String code,
-      @Valid final HardwareCommand hardwareCommand) {
+      @Valid @RequestBody final HardwareCommand hardwareCommand) {
     return hardwareService.update(code, hardwareCommand)
         .map(ResponseEntity::ok)
         .orElseGet(() -> ResponseEntity.notFound().build());

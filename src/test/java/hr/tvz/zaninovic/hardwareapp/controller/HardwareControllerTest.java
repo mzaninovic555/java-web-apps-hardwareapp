@@ -73,6 +73,16 @@ class HardwareControllerTest {
   }
 
   @Test
+  void getHardwareByCode_nonExistendCode() throws Exception {
+    this.mockMvc.perform(
+            get("/hardware/-4984")
+                .with(user("user").password("user").roles("USER"))
+                .with(csrf())
+                .header(HttpHeaders.AUTHORIZATION, "Bearer " + tokenUser))
+        .andExpect(status().isNotFound());
+  }
+
+  @Test
   @Transactional
   void save_roleAdmin() throws Exception {
     this.mockMvc.perform(
@@ -106,6 +116,22 @@ class HardwareControllerTest {
 
   @Test
   @Transactional
+  void save_failedValidation() throws Exception {
+    HardwareCommand testFailedHardware =
+        new HardwareCommand("", "qwfwqf", 1.99, HardwareType.CPU, -54);
+    this.mockMvc.perform(
+            post("/hardware")
+                .with(user("admin").password("admin").roles("ADMIN"))
+                .with(csrf())
+                .header(HttpHeaders.AUTHORIZATION, "Bearer " + tokenAdmin)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(testFailedHardware))
+                .accept(MediaType.APPLICATION_JSON))
+        .andExpect(status().isBadRequest());
+  }
+
+  @Test
+  @Transactional
   void update_roleAdmin() throws Exception {
     this.mockMvc.perform(
         put("/hardware/1")
@@ -130,6 +156,36 @@ class HardwareControllerTest {
                 .content(objectMapper.writeValueAsString(testHardware))
                 .accept(MediaType.APPLICATION_JSON))
         .andExpect(status().isForbidden());
+  }
+
+  @Test
+  @Transactional
+  void update_failedValidation() throws Exception {
+    HardwareCommand testFailedHardware =
+        new HardwareCommand("", "qwfwqf", 1.99, HardwareType.CPU, -54);
+    this.mockMvc.perform(
+            put("/hardware/1")
+                .with(user("admin").password("admin").roles("ADMIN"))
+                .with(csrf())
+                .header(HttpHeaders.AUTHORIZATION, "Bearer " + tokenAdmin)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(testFailedHardware))
+                .accept(MediaType.APPLICATION_JSON))
+        .andExpect(status().isBadRequest());
+  }
+
+  @Test
+  @Transactional
+  void update_nonExistendHardware() throws Exception {
+    this.mockMvc.perform(
+            put("/hardware/-7645796")
+                .with(user("admin").password("admin").roles("ADMIN"))
+                .with(csrf())
+                .header(HttpHeaders.AUTHORIZATION, "Bearer " + tokenAdmin)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(testHardware))
+                .accept(MediaType.APPLICATION_JSON))
+        .andExpect(status().isNotFound());
   }
 
   @Test

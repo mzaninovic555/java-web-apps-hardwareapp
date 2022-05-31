@@ -36,6 +36,11 @@ class AuthenticationControllerTest {
       "password", "user"
   );
 
+  private final Map<String, Object> bodyWrongLogin = Map.of(
+      "username", "wrong",
+      "password", "wrong"
+  );
+
   @Test
   void login_admin() throws Exception {
     this.mockMvc.perform(
@@ -58,5 +63,14 @@ class AuthenticationControllerTest {
         .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
         .andExpect(content().encoding(StandardCharsets.UTF_8))
         .andExpect(jsonPath("$.jwt").isNotEmpty());
+  }
+
+  @Test
+  void login_wrongLoginInfo() throws Exception {
+    this.mockMvc.perform(
+            post("/authentication/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(bodyWrongLogin)))
+        .andExpect(status().isBadRequest());
   }
 }

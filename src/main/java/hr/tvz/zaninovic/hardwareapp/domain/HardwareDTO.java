@@ -10,7 +10,6 @@ import lombok.ToString;
 @AllArgsConstructor
 @Getter
 @Setter
-@ToString
 public class HardwareDTO {
 
   private String code;
@@ -18,4 +17,9 @@ public class HardwareDTO {
   private String name;
 
   private double price;
+
+  @Override
+  public String toString() {
+    return code + " - " + name + " $" + price;
+  }
 }
